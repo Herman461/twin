@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "GraphikLCG";
+    src: local("GraphikLCG-Regular"), url("../../fonts/GraphikLCG-Regular.woff2") format("woff2"), url("../../fonts/GraphikLCG-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GraphikLCG";
+    src: local("GraphikLCG-Medium"), url("../../fonts/GraphikLCG-Medium.woff2") format("woff2"), url("../../fonts/GraphikLCG-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-Medium"), url("../../fonts/Montserrat-Medium.woff2") format("woff2"), url("../../fonts/Montserrat-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-SemiBold"), url("../../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../../fonts/Montserrat-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Bold"), url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-Black"), url("../../fonts/StyreneALC-Black.woff2") format("woff2"), url("../../fonts/StyreneALC-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-BlackItalic"), url("../../fonts/StyreneALC-BlackItalic.woff2") format("woff2"), url("../../fonts/StyreneALC-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-Bold"), url("../../fonts/StyreneALC-Bold.woff2") format("woff2"), url("../../fonts/StyreneALC-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-BoldItalic"), url("../../fonts/StyreneALC-BoldItalic.woff2") format("woff2"), url("../../fonts/StyreneALC-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-Light"), url("../../fonts/StyreneALC-Light.woff2") format("woff2"), url("../../fonts/StyreneALC-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-LightItalic"), url("../../fonts/StyreneALC-LightItalic.woff2") format("woff2"), url("../../fonts/StyreneALC-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-Medium"), url("../../fonts/StyreneALC-Medium.woff2") format("woff2"), url("../../fonts/StyreneALC-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-MediumItalic"), url("../../fonts/StyreneALC-MediumItalic.woff2") format("woff2"), url("../../fonts/StyreneALC-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-Regular"), url("../../fonts/StyreneALC-Regular.woff2") format("woff2"), url("../../fonts/StyreneALC-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-RegularItalic"), url("../../fonts/StyreneALC-RegularItalic.woff2") format("woff2"), url("../../fonts/StyreneALC-RegularItalic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-Thin"), url("../../fonts/StyreneALC-Thin.woff2") format("woff2"), url("../../fonts/StyreneALC-Thin.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "StyreneALC";
+    src: local("StyreneALC-ThinItalic"), url("../../fonts/StyreneALC-ThinItalic.woff2") format("woff2"), url("../../fonts/StyreneALC-ThinItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}

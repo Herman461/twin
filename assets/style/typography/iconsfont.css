@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'icons';
+    src:  url('../../fonts/icons.eot?2cstpb');
+    src:  url('../../fonts/icons.eot?2cstpb#iefix') format('embedded-opentype'),
+    url('../../fonts/icons.ttf?2cstpb') format('truetype'),
+    url('../../fonts/icons.woff?2cstpb') format('woff'),
+    url('../../fonts/icons.svg?2cstpb#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-git .path1:before {
+    content: "\e901";
+    color: rgb(0, 123, 255);
+}
+.icon-git .path2:before {
+    content: "\e902";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-linked-in .path1:before {
+    content: "\e903";
+    color: rgb(255, 255, 255);
+}
+.icon-linked-in .path2:before {
+    content: "\e904";
+    margin-left: -1em;
+    color: rgb(0, 123, 255);
+}
+.icon-linked-in .path3:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: rgb(0, 123, 255);
+}
+.icon-reddit .path1:before {
+    content: "\e906";
+    color: rgb(255, 255, 255);
+}
+.icon-reddit .path2:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(0, 123, 255);
+}
+.icon-reddit .path3:before {
+    content: "\e908";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-search:before {
+    content: "\e909";
+    color: #007bff;
+}
+.icon-telegram .path1:before {
+    content: "\e90a";
+    color: rgb(255, 255, 255);
+}
+.icon-telegram .path2:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(0, 123, 255);
+}
+.icon-telegram .path3:before {
+    content: "\e90c";
+    margin-left: -1em;
+    color: rgb(246, 249, 255);
+}
+.icon-telegram .path4:before {
+    content: "\e90d";
+    margin-left: -1em;
+    color: rgb(0, 123, 255);
+}
+.icon-vk .path1:before {
+    content: "\e90e";
+    color: rgb(255, 255, 255);
+}
+.icon-vk .path2:before {
+    content: "\e90f";
+    margin-left: -1em;
+    color: rgb(0, 123, 255);
+}
+.icon-youtube .path1:before {
+    content: "\e910";
+    color: rgb(255, 255, 255);
+}
+.icon-youtube .path2:before {
+    content: "\e911";
+    margin-left: -1em;
+    color: rgb(0, 123, 255);
+}

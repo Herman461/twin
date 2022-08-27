@@ -1,0 +1,11 @@
+.title-large {
+    font-weight: 500;
+    font-size: var(--txt-extra-large);
+    line-height: 134%;
+    color: var(--dark);
+}
+.title-small {
+    font-weight: 500;
+    line-height: 140.9%;
+    font-size: 1.125rem;
+}
