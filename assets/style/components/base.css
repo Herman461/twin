@@ -55,17 +55,8 @@ body {
 
 }
 
-.top {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: var(--top-spacing);
-}
 
-.top-title {
-    margin-right: var(--title-spacing);
-    line-height: 1 !important;
-}
+
 
 .date {
     color: var(--dark-2);

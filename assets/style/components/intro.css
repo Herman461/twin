@@ -1,11 +1,31 @@
 .intro {
-
     padding-bottom: var(--section-spacing);
 }
 
+.intro-pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.intro-pagination .swiper-pagination-bullet {
+    margin: 0 10px;
+    cursor: pointer;
+    width: 25px;
+    height: 14px;
+    transition: all var(--transition) var(--transition-timing) 0s;
+    background: var(--blue);
+    opacity: 0.2;
+    border-radius: 50px;
+}
+
+.intro-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+}
 
 .intro-slider {
+    min-width: 0;
 }
 
 .intro-slide {
@@ -45,9 +65,14 @@
     .intro {
         padding-bottom: var(--section-adaptive-spacing);
     }
+    .intro-pagination .swiper-pagination-bullet {
+        width: 17px;
+        height: 9px;
+    }
 }
 @media (min-width: 767.98px) {
     .intro-body {
         background: #F6F9FF;
+        padding-bottom: var(--section-adaptive-spacing);
     }
 }

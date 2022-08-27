@@ -1,0 +1,26 @@
+.top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: var(--top-spacing);
+}
+
+.top-title {
+    margin-right: var(--title-spacing);
+    line-height: 1 !important;
+}
+
+.top-column {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.top-column .top-title {
+    margin-bottom: var(--title-spacing);
+    margin-right: 0;
+}
+
+.top-description {
+    font-size: var(--txt-large);
+}
