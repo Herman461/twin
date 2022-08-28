@@ -1,0 +1,19 @@
+.options-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("../../img/options/bg.jpg") center center / cover no-repeat;
+}
+
+.options-item {
+    padding: 15px 15px 20px;
+}
+
+.options-image {
+    height: 100px;
+}
+
+@media (min-width: 991.98px) {
+    .options-item {
+        padding: 15px 30px;
+    }
+}

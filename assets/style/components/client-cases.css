@@ -6,7 +6,7 @@
     padding-bottom: var(--section-adaptive-spacing);
     padding-top: var(--section-adaptive-spacing);
 }
-.client-cases-item {
+.client-cases-slide {
     background: var(--white);
     border-radius: 15px;
     padding: 1.875rem;

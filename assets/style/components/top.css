@@ -6,8 +6,9 @@
 }
 
 .top-title {
-    margin-right: var(--title-spacing);
-    line-height: 1 !important;
+
+
+
 }
 
 .top-column {
@@ -17,10 +18,28 @@
 
 
 .top-column .top-title {
-    margin-bottom: var(--title-spacing);
-    margin-right: 0;
+    margin-bottom: var(--title-spacing) !important;
+
 }
 
 .top-description {
     font-size: var(--txt-large);
+}
+
+@media (max-width: 767.98px) {
+    .top {
+        text-align: center;
+        margin-right: 0;
+    }
+    .top-tag {
+        display: none;
+    }
+}
+@media (min-width: 767.98px) {
+    .top-title {
+        margin-bottom: 0 !important;
+        line-height: 1 !important;
+        margin-right: var(--title-spacing);
+    }
+
 }

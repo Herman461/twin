@@ -14,24 +14,40 @@
     <header class="header">
         <div class="container-xl">
             <div class="header-body">
-                <a href="" class="header-logo">
+                <a href="" class="header-logo mr-md-6">
                     <img src="assets/img/logo.svg" alt="">
                 </a>
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-item">
-                            <a href="" class="menu-link">
+                            <a href="" class="menu-link d-flex align-items-center font-medium">
                                 Продукты и решения
                                 <div class="menu-arrow">
                                     <img src="assets/img/icons/arrow-down.svg" alt="">
                                 </div>
                             </a>
+                            <div class="submenu">
+                                <div class="d-lg-flex align-items-lg-center">
+                                    <a href="" class="submenu-button">Продукты Twin</a>
+                                    <a href="" class="submenu-button">Ваш масштаб</a>
+                                    <a href="" class="submenu-button">Ваша отрасль</a>
+                                    <a href="" class="submenu-button">Ваши задачи</a>
+                                </div>
+                                <div id="products" class="submenu-content">
+                                    <div class="icon icon-youtube"></div>
+                                    <div class="flex-lg-fill">
+                                        <div class="d-lg-flex align-items-lg-center">
+                                            <div class="submenu-title font-medium"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="menu-item">
-                            <a href="" class="menu-link">Клиенты и кейсы</a>
+                            <a href="" class="menu-link font-medium">Клиенты и кейсы</a>
                         </li>
                         <li class="menu-item">
-                            <a href="" class="menu-link">
+                            <a href="" class="menu-link d-flex align-items-center font-medium">
                                 Партнёрство
                                 <div class="menu-arrow">
                                     <img src="assets/img/icons/arrow-down.svg" alt="">
@@ -40,7 +56,7 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="" class="menu-link">
+                            <a href="" class="menu-link d-flex align-items-center font-medium">
                                 Компания
                                 <div class="menu-arrow">
                                     <img src="assets/img/icons/arrow-down.svg" alt="">
@@ -58,19 +74,19 @@
         </div>
     </header>
     <main class="page">
-        <div class="intro">
+        <div class="intro section">
             <div class="intro-body">
                 <div class="container-xl">
                     <div class="intro-slider swiper">
                         <div class="intro-slide">
                             <div class="row">
                                 <div class="col-md-7 col-lg-6 order-md-first">
-                                    <div class="intro-content">
-                                        <h1 class="intro-title title-large">
+                                    <div class="pt-md-5 pt-5 text-align-center text-align-md-left">
+                                        <h1 class="title-large mb-lg-4 mb-4">
                                             Автоматизируйте <br>
                                             коммуникации с ботами Twin
                                         </h1>
-                                        <p class="intro-text">Twin — платформа, которая поможет вам построить
+                                        <p class="mb-6 mb-md-6 text-large">Twin — платформа, которая поможет вам построить
                                             омниканальные автоматизированные коммуникации с клиентом</p>
                                         <a href="" class="intro-button btn-default">Подробнее</a>
                                     </div>
@@ -181,6 +197,65 @@
             </div>
 
         </section>
+        <section class="categories section">
+            <div class="categories-body pt-5 pb-5">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-4">
+                            <div class="categories-item br-normal bg-white">
+                                <h2 class="title-large">Крупному бизнесу</h2>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="text">Индивидуальная
+                                            разработка решения под высокие <br>
+                                            нагрузки и требования</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="categories-icon">
+                                            <img src="assets/img/icons/categories/01.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-4">
+                            <div class="categories-item br-normal bg-white">
+                                <h2 class="title-large">Крупному бизнесу</h2>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="text">Универсальные решения <br>
+                                            с индивидуальной
+                                            настройкой</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="categories-icon">
+                                            <img src="assets/img/icons/categories/02.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-lg-0 mb-4">
+                            <div class="categories-item br-normal bg-white">
+                                <h2 class="title-large">Крупному бизнесу</h2>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="text">Готовые решения для <br>
+                                            моментального запуска</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="categories-icon">
+                                            <img src="assets/img/icons/categories/03.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <section class="solutions">
             <div class="container-xl">
                 <div class="top top-column">
@@ -270,80 +345,290 @@
                         <h2 class="top-title title-large">Клиентские кейсы</h2>
                         <div class="top-tag btn-small">Все</div>
                     </a>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="client-cases-item">
-                                <div class="client-cases-brand">
-                                    <img class="img-fluid" src="assets/img/client-cases/01.png">
-                                </div>
-                                <h3 class="client-cases-title title-small">Как перейти от дорогого контакт-центра на аутсорсе к роботам</h3>
-                                <p class="client-cases-text">Цифровизация и автоматизация процессов с помощью роботов Тwin</p>
+                    <div class="client-cases-slider mb-lg-0 mb-5 swiper slider-disabled">
+                        <div class="client-cases-slide">
+                            <div class="client-cases-brand">
+                                <img class="img-fluid" src="assets/img/client-cases/01.png" alt="">
                             </div>
-
+                            <h3 class="client-cases-title title-small">Как перейти от дорогого контакт-центра на аутсорсе к роботам</h3>
+                            <p class="client-cases-text">Цифровизация и автоматизация процессов с помощью роботов Тwin</p>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="client-cases-item">
-                                <div class="client-cases-brand">
-                                    <img class="img-fluid" src="assets/img/client-cases/02.png">
-                                </div>
-                                <h3 class="client-cases-title title-small">Как перейти от дорогого контакт-центра на аутсорсе к роботам</h3>
-                                <p class="client-cases-text">Цифровизация и автоматизация процессов с помощью роботов Тwin</p>
+                        <div class="client-cases-slide">
+                            <div class="client-cases-brand">
+                                <img class="img-fluid" src="assets/img/client-cases/02.png" alt="">
                             </div>
-
+                            <h3 class="client-cases-title title-small">Как перейти от дорогого контакт-центра на аутсорсе к роботам</h3>
+                            <p class="client-cases-text">Цифровизация и автоматизация процессов с помощью роботов Тwin</p>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="client-cases-item">
-                                <div class="client-cases-brand">
-                                    <img class="img-fluid" src="assets/img/client-cases/03.png">
-                                </div>
-                                <h3 class="client-cases-title title-small">Как перейти от дорогого контакт-центра на аутсорсе к роботам</h3>
-                                <p class="client-cases-text">Цифровизация и автоматизация процессов с помощью роботов Тwin</p>
+                        <div class="client-cases-slide">
+                            <div class="client-cases-brand">
+                                <img class="img-fluid" src="assets/img/client-cases/03.png" alt="">
                             </div>
+                            <h3 class="client-cases-title title-small">Как перейти от дорогого контакт-центра на аутсорсе к роботам</h3>
+                            <p class="client-cases-text">Цифровизация и автоматизация процессов с помощью роботов Тwin</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center d-lg-none">
+                        <div class="button-prev">
+                            <img src="assets/img/icons/angle-left-white.svg" alt="">
+                        </div>
+                        <a href="" class="btn-default">Все кейсы</a>
+                        <div class="button-next">
+                            <img src="assets/img/icons/angle-left-white.svg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="options">
+            <div class="options-body">
+                <div class="container-xl">
+                    <h2 class="title-large text-white text-align-center">Мнения наших пользователей</h2>
+                    <p class="text-large text-large text-align-center text-white mb-5 mb-lg-5">Как сотни компаний развивают бизнес, увеличивая и удешевляя <br>коммуникации со своими клиентами с помощью продуктов TWIN</p>
+                    <div class="options-slider slider-disabled mb-lg-0 mb-5 swiper">
+                        <div class="options-slide">
+                            <div class="options-item bg-white br-normal">
+                                <div class="options-image text-align-center mb-4">
+                                    <img class="img-fluid" src="assets/img/options/01.png" alt="">
+                                </div>
+                                <h3 class="title-small mb-3 mb-lg-3">ТрансТелеКом</h3>
+                                <p class="text-dark mb-lg-5 mb-7">Продукты Twin нам очень помогли. Теперь у наших агентов больше возможности сосредоточиться на более сложных вопросах. Это определённо повышает уровень нашего обслуживания. Мы увеличили пропускную способность нашего колл-центра, подключив виртуального оператора Twin.</p>
+                                <div class="font-style-italic text">Александра Попова</div>
+                                <div class="font-style-italic text mb-3">Директор Big Data и аналитики </div>
+                                <div class="date text-align-right">18.06.2022</div>
+                            </div>
+                        </div>
+                        <div class="options-slide">
+                            <div class="options-item bg-white br-normal">
+                                <div class="options-image text-align-center mb-4">
+                                    <img class="img-fluid" src="assets/img/options/01.png" alt="">
+                                </div>
+                                <h3 class="title-small mb-3 mb-lg-3">ТрансТелеКом</h3>
+                                <p class="text-dark mb-lg-5 mb-7">Продукты Twin нам очень помогли. Теперь у наших агентов больше возможности сосредоточиться на более сложных вопросах. Это определённо повышает уровень нашего обслуживания. Мы увеличили пропускную способность нашего колл-центра, подключив виртуального оператора Twin.</p>
+                                <div class="font-style-italic text">Александра Попова</div>
+                                <div class="font-style-italic text mb-3">Директор Big Data и аналитики </div>
+                                <div class="date text-align-right">18.06.2022</div>
+                            </div>
+                        </div>
+                        <div class="options-slide">
+                            <div class="options-item bg-white br-normal">
+                                <div class="options-image text-align-center mb-4">
+                                    <img class="img-fluid" src="assets/img/options/01.png" alt="">
+                                </div>
+                                <h3 class="title-small mb-3 mb-lg-3">ТрансТелеКом</h3>
+                                <p class="text-dark mb-lg-5 mb-7">Продукты Twin нам очень помогли. Теперь у наших агентов больше возможности сосредоточиться на более сложных вопросах. Это определённо повышает уровень нашего обслуживания. Мы увеличили пропускную способность нашего колл-центра, подключив виртуального оператора Twin.</p>
+                                <div class="font-style-italic text">Александра Попова</div>
+                                <div class="font-style-italic text mb-3">Директор Big Data и аналитики </div>
+                                <div class="date text-align-right">18.06.2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center d-lg-none">
+                        <div class="button-prev bg-white">
+                            <img src="assets/img/icons/angle-left-blue.svg" alt="">
+                        </div>
+                        <div class="button-next bg-white">
+                            <img src="assets/img/icons/angle-left-blue.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="integration section">
+            <div class="integration-body pt-lg-0 pt-5 pb-5 bg-light">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-lg-7 mb-4 mb-lg-0">
+                            <div class="pt-md-5 pt-lg-7 text-align-center text-align-lg-left">
+                                <h2 class="title-large mb-lg-4 mb-4">
+                                    Подключайте ко всему
+                                </h2>
+                                <p class="mb-6 mb-md-6 text-large">Платформа Twin поддерживает интеграции с большинством IP-PBX, CRM-систем (АМО, БИТРИКС, 1С, Мегаплан, Y-Clients) и Яндекс.Алисой. Для интеграций с другими системами вы можете использовать документированное API.</p>
+                                <a href="" class="btn-default">Подробнее</a>
+                            </div>
 
+                        </div>
+                        <div class="col-lg-4 col-lg-1 offset-lg-1">
+                            <div class="integration-image-desktop">
+                                <img class="img-fluid" src="assets/img/integration/01.png" alt="">
+                            </div>
+                            <div class="integration-image-mobile text-align-center">
+                                <img class="img-fluid" src="assets/img/integration/01-adaptive.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
-        <section class="news">
+        <section class="info section">
+            <div class="info-body">
+                <section class="section">
+                    <div class="container-xl">
+                        <a href="" class="top">
+                            <h2 class="top-title title-large">Новости</h2>
+                            <div class="top-tag btn-small">Все</div>
+                        </a>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-item">
+                                    <div class="info-image">
+                                        <img class="img-fluid" src="assets/img/news/01.jpg" alt="">
+                                    </div>
+                                    <div class="info-info">
+                                        <div class="info-date date">07.07.2022</div>
+                                        <h3 class="info-title title-small">Конференция «Опора России» по маркетингу</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-item">
+                                    <div class="info-image">
+                                        <img class="img-fluid" src="assets/img/news/02.jpg" alt="">
+                                    </div>
+                                    <div class="info-info">
+                                        <div class="info-date date">07.07.2022</div>
+                                        <h3 class="info-title title-small">Третья встреча Twin с партнёрами</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-item">
+                                    <div class="info-image">
+                                        <img class="img-fluid" src="assets/img/news/03.jpg" alt="">
+                                    </div>
+                                    <div class="info-info">
+                                        <div class="info-date date">07.07.2022</div>
+                                        <h3 class="info-title title-small">TWIN — обновление №15</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container-xl">
+                        <a href="" class="top">
+                            <h2 class="top-title title-large">Календарь событий</h2>
+                            <div class="top-tag btn-small">Все</div>
+                        </a>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-item bg-light border-none">
+                                    <div class="info-image">
+                                        <img class="img-fluid" src="assets/img/events/01.jpg" alt="">
+                                    </div>
+                                    <div class="info-info">
+                                        <div class="info-date date"><span class="date-item">07.07.2022</span> <span class="date-city">Самара</span></div>
+                                        <h3 class="info-title title-small">Выставка франшиз «Franch Region»</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-item bg-light border-none">
+                                    <div class="info-image">
+                                        <img class="img-fluid" src="assets/img/events/02.jpg" alt="">
+                                    </div>
+                                    <div class="info-info">
+                                        <div class="info-date date"><span class="date-item">07.07.2022</span> <span class="date-city">Рязань</span></div>
+                                        <h3 class="info-title title-small">Конференция для CRM-маркетологов «Маркетинг и кутёж»</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="info-item bg-light border-none">
+                                    <div class="info-image">
+                                        <img class="img-fluid" src="assets/img/events/03.jpg" alt="">
+                                    </div>
+                                    <div class="info-info">
+                                        <div class="info-date date"><span class="date-item">09.09.2022 — 10.09.2022</span> <span class="date-city">Казань</span></div>
+                                        <h3 class="info-title title-small">Иннополис. Конференция «CrossConf»</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="press section">
             <div class="container-xl">
-                <a href="" class="top">
-                    <h2 class="top-title title-large">Новости</h2>
-                    <div class="top-tag btn-small">Все</div>
-                </a>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="news-item">
-                            <div class="news-image">
-                                <img class="img-fluid" src="assets/img/news/01.jpg" alt="">
-                            </div>
-                            <div class="news-info">
-                                <div class="news-date date">07.07.2022</div>
-                                <h3 class="news-title title-small">Конференция «Опора России» по маркетингу</h3>
-                            </div>
+                <h2 class="title-large text-align-center">Пресса о нас</h2>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/01.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="news-item">
-                            <div class="news-image">
-                                <img class="img-fluid" src="assets/img/news/02.jpg" alt="">
-                            </div>
-                            <div class="news-info">
-                                <div class="news-date date">07.07.2022</div>
-                                <h3 class="news-title title-small">Конференция «Опора России» по маркетингу</h3>
-                            </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/02.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="news-item">
-                            <div class="news-image">
-                                <img class="img-fluid" src="assets/img/news/03.jpg" alt="">
-                            </div>
-                            <div class="news-info">
-                                <div class="news-date date">07.07.2022</div>
-                                <h3 class="news-title title-small">Конференция «Опора России» по маркетингу</h3>
-                            </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/03.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/04.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/05.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/06.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/07.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/08.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/09.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/10.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/11.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/12.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/13.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/14.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="press-image">
+                            <img src="assets/img/press/15.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -355,7 +640,7 @@
     </footer>
 </div>
 <script src="assets/script/plugins/swiper-bundle.min.js"></script>
-<script src="assets/script/plugins/swiper-build.js"></script>
+<script src="assets/script/script.js"></script>
 <script src="assets/script/pages/home.js"></script>
 </body>
 </html>

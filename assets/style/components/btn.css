@@ -48,6 +48,28 @@
     transition: all var(--transition) var(--transition-timing)  0s;
 }
 
+.button-prev,
+.button-next {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue);
+}
+
+.button-next {
+
+    margin-left: 25px;
+}
+.button-next img {
+    transform: rotate(180deg);
+}
+.button-prev {
+    margin-right: 25px;
+}
+
 @media (any-hover: hover) {
     .btn-default:hover {
         border-color: var(--blue);

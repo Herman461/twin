@@ -3,9 +3,75 @@
     font-size: var(--txt-extra-large);
     line-height: 134%;
     color: var(--dark);
+    margin-bottom: var(--title-spacing);
 }
+
 .title-small {
     font-weight: 500;
     line-height: 140.9%;
     font-size: 1.125rem;
 }
+
+.text-large {
+    font-size: var(--txt-large);
+    line-height: calc(26 / 18 * 100%);
+    color: var(--dark);
+}
+
+.font-style-italic {
+    font-style: italic;
+}
+
+.font-thin {
+    font-weight: 300;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+
+
+.text-dark {
+    font-size: var(--txt-medium);
+    line-height: var(--txt-line-height);
+    color: var(--dark)
+}
+.text {
+    font-size: var(--txt-medium);
+    line-height: var(--txt-line-height);
+}
+
+@media (min-width: 767.98px) {
+    .text-align-md-left {
+        text-align: left;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .text-align-lg-left {
+        text-align: left;
+    }
+}
+
+
