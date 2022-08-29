@@ -1,7 +1,3 @@
-.solutions {
-    padding-bottom: var(--section-spacing);
-
-}
 .solutions-item {
     text-align: center;
     margin-bottom: 20px;
@@ -28,9 +24,6 @@
 
 
 @media (max-width: 767.98px) {
-    .solutions {
-        padding-bottom: var(--section-adaptive-spacing);
-    }
     .solutions-icon {
         width: 81px;
         height: 81px;

@@ -1,11 +1,3 @@
-.client-cases {
-    padding-bottom: var(--section-adaptive-spacing);
-}
-.client-cases-body {
-    background: var(--white-2);
-    padding-bottom: var(--section-adaptive-spacing);
-    padding-top: var(--section-adaptive-spacing);
-}
 .client-cases-slide {
     background: var(--white);
     border-radius: 15px;

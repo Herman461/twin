@@ -1,12 +1,9 @@
-.categories {
+.categories::before {
+    background: url('../../img/backgrounds/categories/pattern-left.svg') 0 50% no-repeat;
 }
-
-.categories-body {
-    background: url('../../img/backgrounds/categories-bg.jpg') center center / cover no-repeat;
+.categories::after {
+    background: url('../../img/backgrounds/categories/pattern-right.svg') 100% 50% no-repeat;
 }
-
-
-
 .categories-item {
     padding: 25px 25px 30px;
 }
@@ -22,5 +19,14 @@
     .categories-icon img {
         width: 60px;
         height: 60px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .categories::before {
+        background: url('../../img/backgrounds/categories/pattern-top.svg') 50% 0 no-repeat;
+    }
+    .categories::after {
+        background: url('../../img/backgrounds/categories/pattern-top.svg') 50% 101% no-repeat;
     }
 }

@@ -437,3 +437,16 @@ if (iconMenu) {
     })
 }
 
+const videos = document.querySelectorAll('.video iframe')
+
+if (videos.length > 0) {
+    function calculateVideoHeight() {
+        for (let index = 0; index < videos.length; index++) {
+            const video = videos[index]
+            const width = video.clientWidth
+            video.style.height = width / 1.7777 + 'px';
+        }
+    }
+    window.addEventListener('resize', calculateVideoHeight)
+    calculateVideoHeight();
+}

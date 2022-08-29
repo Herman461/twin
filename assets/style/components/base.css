@@ -27,9 +27,18 @@
     --transition: 0.3s;
     --gutter-x: 1rem;
     --title-spacing: 1.5625rem;
-    --section-adaptive-spacing: 50px;
     --top-spacing: 50px;
     --border-radius-normal: 15px;
+    --gutter-1: 0.3125rem;
+    --gutter-2: 0.625rem;
+    --gutter-3: 0.9375rem;
+    --gutter-4: 1.25rem;
+    --gutter-5: 1.5625rem;
+    --gutter-6: 1.875rem;
+    --gutter-7: 2.1875rem;
+    --gutter-10: 3.125rem;
+    --gutter-15: 4.6875rem;
+    --gutter-20: 6.25rem;
 }
 
 
@@ -44,6 +53,10 @@ body, html {
 
 body.hidden {
     overflow: hidden;
+}
+
+body {
+    overflow-x: hidden !important;
 }
 
 *::selection {
@@ -76,8 +89,24 @@ body.hidden {
     max-width: 100%;
     height: auto;
 }
+.bg-default {
+    position: relative;
+    background: var(--blue);
+}
+.bg-default::before,
+.bg-default::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-
+.bg-default > .container-xl {
+    position: relative;
+    z-index: 3;
+}
 
 
 .date {
@@ -133,6 +162,11 @@ body.hidden {
     background: var(--white) !important;
 }
 
+.flex-fill-100 {
+    flex: 1 1 100%;
+}
+
+
 
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     padding: 0 var(--gutter-x) !important;
@@ -154,4 +188,10 @@ body.hidden {
         transform: none !important;
     }
 
+}
+
+@media (max-width: 991.98px) {
+    .page {
+        padding-top: 60px;
+    }
 }

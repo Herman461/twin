@@ -20,12 +20,18 @@
 }
 
 .swiper-build.swiper-container-autoheight .swiper-slide {
-    height: auto !important;
+    height: auto;
 }
 
 .swiper-build.swiper-container-autoheight .swiper-wrapper {
     align-items: flex-start;
     transition-property: transform, height;
+}
+
+@media (max-width: 991.98px) {
+    .swiper-build {
+        overflow: visible !important;
+    }
 }
 
 

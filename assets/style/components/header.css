@@ -189,6 +189,15 @@
     .header-btn {
         width: 100%;
     }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: var(--white);
+        z-index: 30;
+    }
     .menu .tabs-content {
         margin-bottom: 30px;
         border-bottom: 1px solid var(--light);
@@ -274,12 +283,10 @@
         top: 60px;
         left: 100%;
         width: 100%;
-        height: calc(100% + 60px);
+        height: 100%;
+        min-height: 100%;
         z-index: 7;
-        padding-left: var(--gutter-x);
-        padding-right: var(--gutter-x);
-        padding-bottom: 50px;
-        padding-top: 22px;
+        padding: 22px var(--gutter-x) 50px var(--gutter-x);
         background: var(--white);
         overflow: auto;
         transition: all var(--transition) var(--transition-timing) 0s;

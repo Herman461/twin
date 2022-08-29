@@ -3,7 +3,6 @@
     font-size: var(--txt-extra-large);
     line-height: 134%;
     color: var(--dark);
-    margin-bottom: var(--title-spacing);
 }
 
 .title-small {
