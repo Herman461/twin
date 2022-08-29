@@ -8,6 +8,7 @@
 @import "style/components/header.css";
 @import "style/typography/iconsfont.css";
 @import "style/components/top.css";
+@import "style/components/footer.css";
 
 
 /*press*/
@@ -20,10 +21,6 @@
 .press-image img {
     width: auto;
     height: auto;
-}
-
-.header {
-    display: none;
 }
 
 

@@ -1,5 +1,4 @@
 .btn-default {
-    font-family: var(--body-font-family);
     background: var(--blue);
     color: var(--white);
     font-weight: 500;
@@ -16,7 +15,6 @@
 }
 
 .btn-white {
-    font-family: var(--body-font-family);
     background: var(--blue);
     color: var(--white);
     font-weight: 400;
@@ -32,7 +30,6 @@
     line-height: calc(18.4 / 14 * 100%);
 }
 .btn-small {
-    font-family: var(--body-font-family);
     background: var(--blue);
     color: var(--white);
     font-weight: 500;
@@ -46,6 +43,20 @@
     border: 1px solid transparent;
     line-height: calc(18.4 / 14 * 100%);
     transition: all var(--transition) var(--transition-timing)  0s;
+}
+
+.submenu-tag {
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 0.6875rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2px 3px;
+    border-radius: 2px;
+    line-height: 131%;
 }
 
 .button-prev,

@@ -50,6 +50,15 @@
     color: var(--white) !important;
 }
 
+.text-blue {
+    color: var(--blue) !important;
+}
+
+.text-small {
+    font-size: var(--txt-ultra-small);
+    line-height: 174.9%;
+    color: #435269;
+}
 
 
 .text-dark {
@@ -71,6 +80,9 @@
 @media (min-width: 991.98px) {
     .text-align-lg-left {
         text-align: left;
+    }
+    .text-align-lg-right {
+        text-align: right;
     }
 }
 

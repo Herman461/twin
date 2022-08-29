@@ -25,81 +25,81 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-git .path1:before {
-    content: "\e901";
+.icon-git:before {
+    content: "\e900";
     color: rgb(0, 123, 255);
 }
-.icon-git .path2:before {
-    content: "\e902";
+.icon-git:before {
+    content: "\e901";
     margin-left: -1em;
     color: rgb(255, 255, 255);
 }
-.icon-linked-in .path1:before {
-    content: "\e903";
+.icon-linked-in:before {
+    content: "\e902";
     color: rgb(255, 255, 255);
 }
-.icon-linked-in .path2:before {
+.icon-linked-in:before {
+    content: "\e903";
+    margin-left: -1em;
+    color: rgb(0, 123, 255);
+}
+.icon-linked-in:before {
     content: "\e904";
     margin-left: -1em;
     color: rgb(0, 123, 255);
 }
-.icon-linked-in .path3:before {
+.icon-reddit:before {
     content: "\e905";
-    margin-left: -1em;
-    color: rgb(0, 123, 255);
-}
-.icon-reddit .path1:before {
-    content: "\e906";
     color: rgb(255, 255, 255);
 }
-.icon-reddit .path2:before {
-    content: "\e907";
+.icon-reddit:before {
+    content: "\e906";
     margin-left: -1em;
     color: rgb(0, 123, 255);
 }
-.icon-reddit .path3:before {
-    content: "\e908";
+.icon-reddit:before {
+    content: "\e907";
     margin-left: -1em;
     color: rgb(255, 255, 255);
 }
 .icon-search:before {
-    content: "\e909";
+    content: "\e908";
     color: #007bff;
 }
-.icon-telegram .path1:before {
-    content: "\e90a";
+.icon-telegram:before {
+    content: "\e909";
     color: rgb(255, 255, 255);
 }
-.icon-telegram .path2:before {
-    content: "\e90b";
+.icon-telegram:before {
+    content: "\e90a";
     margin-left: -1em;
     color: rgb(0, 123, 255);
 }
-.icon-telegram .path3:before {
-    content: "\e90c";
+.icon-telegram:before {
+    content: "\e90b";
     margin-left: -1em;
     color: rgb(246, 249, 255);
 }
-.icon-telegram .path4:before {
+.icon-telegram:before {
+    content: "\e90c";
+    margin-left: -1em;
+    color: rgb(0, 123, 255);
+}
+.icon-vk:before {
     content: "\e90d";
-    margin-left: -1em;
-    color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
 }
-.icon-vk .path1:before {
+.icon-vk:before {
     content: "\e90e";
-    color: rgb(255, 255, 255);
-}
-.icon-vk .path2:before {
-    content: "\e90f";
     margin-left: -1em;
     color: rgb(0, 123, 255);
 }
-.icon-youtube .path1:before {
-    content: "\e910";
+.icon-youtube:before {
+    content: "\e90f";
     color: rgb(255, 255, 255);
 }
-.icon-youtube .path2:before {
-    content: "\e911";
+.icon-youtube:before {
+    content: "\e910";
     margin-left: -1em;
     color: rgb(0, 123, 255);
 }
