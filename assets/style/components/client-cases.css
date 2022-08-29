@@ -28,6 +28,9 @@
     font-size: var(--txt-medium);
     line-height: var(--txt-line-height);
 }
+.client-cases .swiper-slide {
+    height: auto;
+}
 
 @media (max-width: 767.98px) {
     .client-cases {
@@ -37,3 +40,4 @@
         margin-bottom: 27px;
     }
 }
+

@@ -61,4 +61,10 @@
         background: #F6F9FF;
         padding-bottom: var(--section-adaptive-spacing);
     }
+    .intro-slide:nth-child(odd) > .row {
+        flex-direction: row-reverse;
+    }
+    .intro-slide:nth-child(odd) .intro-content {
+        text-align: right !important;
+    }
 }

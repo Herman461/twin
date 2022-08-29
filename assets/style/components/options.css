@@ -6,10 +6,15 @@
 
 .options-item {
     padding: 15px 15px 20px;
+    height: 100%;
 }
 
 .options-image {
     height: 100px;
+}
+.options .swiper-slide {
+    height: auto;
+    min-height: 100%;
 }
 
 @media (min-width: 991.98px) {

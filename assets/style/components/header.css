@@ -110,6 +110,8 @@
         margin-bottom: 25px;
     }
 
+
+
     .submenu-list:last-child {
         padding-bottom: 0;
         border: none;
@@ -146,6 +148,9 @@
         opacity: 0;
         visibility: hidden;
         transition: all var(--transition) var(--transition-timing) 0s;
+    }
+    .submenu-medium {
+        width: 252px;
     }
     .submenu-big {
         transform: translate(-50%, -15px);
