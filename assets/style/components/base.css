@@ -41,6 +41,10 @@ body, html {
     font-style: var(--body-font-style);
 }
 
+body.hidden {
+    overflow: hidden;
+}
+
 *::selection {
     background: var(--blue);
     color: var(--white);
@@ -80,10 +84,11 @@ body, html {
     font-size: 0.8125rem;
     line-height: calc(17 / 13 * 100%);
     position: relative;
-
-
 }
 
+.position-relative {
+    position: relative;
+}
 
 
 .date-item {

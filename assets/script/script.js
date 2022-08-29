@@ -403,6 +403,12 @@ if (menuLinks.length > 0) {
         if (!link.nextElementSibling || !link.nextElementSibling.classList.contains('submenu')) continue
 
         link.addEventListener('mouseenter', function() {
+            if (document.querySelector('.submenu.active')) {
+                const activeSubmenu = document.querySelector('.submenu.active')
+                activeSubmenu.classList.remove('active')
+                activeSubmenu.classList.remove('active')
+                activeSubmenu.previousElementSibling.classList.remove('active')
+            }
             const submenu = link.nextElementSibling
             submenu.classList.add('active')
             link.classList.add('active')
@@ -418,4 +424,14 @@ window.addEventListener('mousemove', function(e) {
     }
 })
 
+
+const iconMenu = document.querySelector('.icon-menu')
+
+if (iconMenu) {
+    iconMenu.addEventListener('click', function(e) {
+        iconMenu.classList.toggle('active')
+        document.querySelector('.menu').classList.toggle('active')
+        document.body.classList.toggle('hidden')
+    })
+}
 
