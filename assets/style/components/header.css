@@ -157,7 +157,7 @@
     .submenu-big {
         transform: translate(-50%, -15px);
         max-width: 875px;
-        padding: 15px 45px;
+        padding: 15px 45px !important;
         width: 100%;
     }
     .submenu.active {

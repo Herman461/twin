@@ -67,4 +67,12 @@
     .intro-slide:nth-child(odd) .intro-content {
         text-align: right !important;
     }
+    .intro-slide:nth-child(odd) .offset-lg-1 {
+        margin-left: 0 !important;
+    }
+    .intro-slide:nth-child(odd) .offset-lg-1 {
+        margin-right: 8.3333% !important;
+    }
+
+
 }
