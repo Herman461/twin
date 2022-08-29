@@ -73,6 +73,17 @@
     .intro-slide:nth-child(odd) .offset-lg-1 {
         margin-right: 8.3333% !important;
     }
-
-
+    .intro-image {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .intro-slide:nth-child(odd) .intro-image {
+        justify-content: flex-start;
+    }
+    /*.intro-slide:nth-child(even) .intro-image img {*/
+    /*    margin-right: -16px;*/
+    /*}*/
+    /*.intro-slide:nth-child(odd) .intro-image img {*/
+    /*    margin-left: -24px;*/
+    /*}*/
 }

@@ -70,6 +70,9 @@
     font-size: var(--txt-medium);
     line-height: var(--txt-line-height);
 }
+.text-blue {
+    color: var(--blue) !important;
+}
 
 @media (min-width: 767.98px) {
     .text-align-md-left {

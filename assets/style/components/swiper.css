@@ -19,8 +19,8 @@
     flex-wrap: wrap;
 }
 
-.swiper-build .swiper-container-autoheight .swiper-slide {
-    height: auto;
+.swiper-build.swiper-container-autoheight .swiper-slide {
+    height: auto !important;
 }
 
 .swiper-build.swiper-container-autoheight .swiper-wrapper {

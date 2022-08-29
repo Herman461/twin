@@ -189,6 +189,14 @@
     .header-btn {
         width: 100%;
     }
+    .menu .tabs-content {
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--light);
+    }
+    .menu .tabs-content:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
     .submenu-item {
         margin-bottom: 22px;
     }
@@ -234,6 +242,7 @@
         width: 100%;
         height: 2px;
         background: var(--dark);
+        transition: all var(--transition) var(--transition-timing) 0s;
     }
 
     .icon-menu span:nth-child(1) {
@@ -248,16 +257,29 @@
         bottom: 0;
     }
 
+    .icon-menu.active span:nth-child(2) {
+        opacity: 0;
+        top: 50%;
+    }
+    .icon-menu.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: calc(50% - 1px);
+    }
+    .icon-menu.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+    }
     .menu {
         position: fixed;
         top: 60px;
         left: 100%;
         width: 100%;
-        height: 100%;
+        height: calc(100% + 60px);
         z-index: 7;
         padding-left: var(--gutter-x);
         padding-right: var(--gutter-x);
         padding-bottom: 50px;
+        padding-top: 22px;
         background: var(--white);
         overflow: auto;
         transition: all var(--transition) var(--transition-timing) 0s;
