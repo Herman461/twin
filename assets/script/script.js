@@ -176,7 +176,7 @@ if (spoilersArray.length > 0) {
             spoilerTitles.forEach(spoilerTitle => {
                 if (hideSpoilerBody) {
                     spoilerTitle.removeAttribute("tabindex");
-                    if (!spoilerTitle.classList.contains("active-spoiler")) {
+                    if (!spoilerTitle.classList.contains("active")) {
                         spoilerTitle.nextElementSibling.hidden = true;
                     }
                 } else {
@@ -193,19 +193,19 @@ if (spoilersArray.length > 0) {
             const spoilersBlock = spoilerTitle.closest('[data-spoilers]');
             const oneSpoiler = spoilersBlock.hasAttribute('data-one-spoiler') ? true : false;
             if (!spoilersBlock.querySelectorAll(".slide").length) {
-                if (oneSpoiler && !spoilerTitle.classList.contains("active-spoiler")) {
+                if (oneSpoiler && !spoilerTitle.classList.contains("active")) {
                     hideSpoilerBody(spoilersBlock);
                 }
-                spoilerTitle.classList.toggle("active-spoiler");
+                spoilerTitle.classList.toggle("active");
                 slideToggle(spoilerTitle.nextElementSibling, 500)
             }
             e.preventDefault();
         }
     }
     function hideSpoilerBody(spoilersBlock) {
-        const spoilerActiveTitle = spoilersBlock.querySelector('[data-spoiler].active-spoiler');
+        const spoilerActiveTitle = spoilersBlock.querySelector('[data-spoiler].active');
         if (spoilerActiveTitle) {
-            spoilerActiveTitle.classList.remove("active-spoiler");
+            spoilerActiveTitle.classList.remove("active");
             slideUp(spoilerActiveTitle.nextElementSibling, 500)
         }
     }
@@ -403,6 +403,7 @@ if (menuLinks.length > 0) {
         if (!link.nextElementSibling || !link.nextElementSibling.classList.contains('submenu')) continue
 
         link.addEventListener('mouseenter', function() {
+            if (!window.matchMedia("(min-width: 991.98px)").matches) return
             if (document.querySelector('.submenu.active')) {
                 const activeSubmenu = document.querySelector('.submenu.active')
                 activeSubmenu.classList.remove('active')
@@ -418,6 +419,7 @@ if (menuLinks.length > 0) {
 
 
 window.addEventListener('mousemove', function(e) {
+    if (!window.matchMedia("(min-width: 991.98px)").matches) return
     if (document.querySelector('.submenu.active') && !e.target.closest('.header')) {
         document.querySelector('.submenu.active').classList.remove('active')
         document.querySelector('.menu-link.active').classList.remove('active')

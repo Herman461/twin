@@ -17,7 +17,7 @@
                 <a href="" class="header-logo mr-md-6">
                     <img src="assets/img/logo.svg" alt="">
                 </a>
-                <nav data-spoilers="991.98,max" data-one-spoiler="" class="menu">
+                <nav data-one-spoiler="" data-spoilers="991.98,max" class="menu">
                     <ul class="menu-list">
                         <li class="menu-item">
                             <a data-spoiler="" href="" class="menu-link d-flex align-items-center font-medium">
@@ -27,23 +27,24 @@
                                     <img class="d-lg-none d-lg-inline-block" src="assets/img/icons/arrow-down-black.svg" alt="">
                                 </div>
                             </a>
-                            <div class="submenu submenu-big pb-lg-5 bg-white">
+                            <div class="submenu px-lg-0 px-2 submenu-big pb-lg-5 bg-white">
                                 <div class="submenu-top d-lg-flex d-none align-items-lg-center justify-content-lg-between">
                                     <button data-tab-title="products" type="button" class="submenu-button tabs-button font-medium active">Продукты Twin</button>
                                     <button data-tab-title="scale" type="button" class="submenu-button tabs-button font-medium">Ваш масштаб</button>
                                     <button data-tab-title="industry" type="button" class="submenu-button tabs-button font-medium">Ваша отрасль</button>
                                     <button data-tab-title="tasks" type="button" class="submenu-button tabs-button font-medium">Ваши задачи</button>
                                 </div>
-                                <div class="tabs-content active" id="products">
+                                <div class="submenu-label d-lg-none mb-4">Продукты Twin</div>
+                                <div class="tabs-content" id="products">
                                     <div class="row">
                                         <div class="col-lg-6 pb-lg-5">
                                             <div class="submenu-item d-flex align-items-lg-start align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/products/01.svg" alt="">
                                                 </div>
-                                                <div class="flex-lg-fill ps-3">
-                                                    <div class="mb-lg-2 submenu-content justify-content-between d-lg-flex align-items-lg-center">
-                                                        <a href="" class="submenu-title font-medium">Голосовой бот</a>
+                                                <div class="flex-fill ps-3">
+                                                    <div class="mb-lg-2 submenu-content justify-content-between d-flex align-items-lg-center">
+                                                        <a href="" class="submenu-title flex-fill font-medium">Голосовой бот</a>
                                                         <div class="submenu-tag">TWIN.VoiceBot</div>
                                                     </div>
                                                     <p class="text-small d-none d-lg-inline">Говорит как человек, понимает эмоции, обучается, распознаёт речь при шумах и ведёт тысячи звонков одновременно</p>
@@ -55,9 +56,9 @@
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/products/02.svg" alt="">
                                                 </div>
-                                                <div class="flex-lg-fill ps-3">
-                                                    <div class="mb-lg-2 submenu-content justify-content-between d-lg-flex align-items-lg-center">
-                                                        <a href="" class="submenu-title font-medium">Чат-бот</a>
+                                                <div class="flex-fill ps-3">
+                                                    <div class="mb-lg-2 submenu-content justify-content-between d-flex align-items-lg-center">
+                                                        <a href="" class="submenu-title flex-fill font-medium">Чат-бот</a>
                                                         <div class="submenu-tag">TWIN.Chat</div>
                                                     </div>
                                                     <p class="text-small d-none d-lg-inline">Общается на естественном языке, работает в разных мессенджерах, понимает намерения и контекст, может обмениваться файлами</p>
@@ -69,9 +70,9 @@
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/products/03.svg" alt="">
                                                 </div>
-                                                <div class="flex-lg-fill ps-3">
-                                                    <div class="mb-lg-2 submenu-content justify-content-between d-lg-flex align-items-lg-center">
-                                                        <a href="" class="submenu-title font-medium">Чат-платформа</a>
+                                                <div class="flex-fill ps-3">
+                                                    <div class="mb-lg-2 submenu-content justify-content-between d-flex align-items-lg-center">
+                                                        <a href="" class="submenu-title flex-fill font-medium">Чат-платформа</a>
                                                         <div class="submenu-tag">TWIN.Chat</div>
                                                     </div>
                                                     <p class="text-small d-none d-lg-inline">Объединяет тысячи диалогов операторов с клиентами по разным каналам в единой удобной панели управления</p>
@@ -83,9 +84,9 @@
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/products/04.svg" alt="">
                                                 </div>
-                                                <div class="flex-lg-fill ps-3">
-                                                    <div class="mb-lg-2 submenu-content justify-content-between d-lg-flex align-items-lg-center">
-                                                        <a href="" class="submenu-title font-medium">Рассылка сообщений</a>
+                                                <div class="flex-fill ps-3">
+                                                    <div class="mb-lg-2 submenu-content justify-content-between d-flex align-items-lg-center">
+                                                        <a href="" class="submenu-title flex-fill font-medium">Рассылка сообщений</a>
                                                         <div class="submenu-tag">TWIN.Message</div>
                                                     </div>
                                                     <p class="text-small d-none d-lg-inline">Позволяет рассылать миллионы сообщений клиентам по разным каналам — от мессенджеров до соцсетей, от СМС до email</p>
@@ -94,15 +95,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tabs-content" id="scale">
+                                <div class="tabs-content mb-4" id="scale">
                                     <div class="row justify-content-lg-evenly">
 
                                         <div class="col-lg-3">
-                                            <div class="text-align-center">
+                                            <div class="submenu-item text-align-lg-center d-lg-block d-flex align-items-center">
                                                 <div class="submenu-image mb-lg-2">
                                                     <img src="assets/img/icons/menu/scale/01.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium mb-lg-2">Крупному бизнесу</div>
+                                                <div class="submenu-title font-medium ps-3 ps-lg-0 mb-lg-2">Крупному бизнесу</div>
                                                 <p class="text-small">Индивидуальная
                                                     разработка решения под
                                                     высокие нагрузки</p>
@@ -110,22 +111,22 @@
 
                                         </div>
                                         <div class="col-lg-3">
-                                            <div class="text-align-center">
+                                            <div class="submenu-item text-align-lg-center d-lg-block d-flex align-items-center">
                                                 <div class="submenu-image mb-lg-2">
                                                     <img src="assets/img/icons/menu/scale/02.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium mb-lg-2">Среднему бизнесу</div>
+                                                <div class="submenu-title font-medium ps-3 ps-lg-0 mb-lg-2">Среднему бизнесу</div>
                                                 <p class="text-small">Универсальные решения
                                                     с индивидуальной
                                                     настройкой</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <div class="text-align-center">
+                                            <div class="submenu-item text-align-lg-center d-lg-block d-flex align-items-center">
                                                 <div class="submenu-image mb-lg-2">
                                                     <img src="assets/img/icons/menu/scale/03.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium mb-lg-2">Малому бизнесу</div>
+                                                <div class="submenu-title font-medium ps-3 ps-lg-0 mb-lg-2">Малому бизнесу</div>
                                                 <p class="text-small">Готовые решения для
                                                     моментального запуска</p>
                                             </div>
@@ -134,157 +135,157 @@
 
 
                                 </div>
-                                <div class="tabs-content" id="industry">
+                                <div class="tabs-content mb-4" id="industry">
                                     <div class="row">
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/industry/01.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Финансы и страхование</div>
+                                                <div class="submenu-title font-medium ps-3">Финансы и страхование</div>
                                             </a>
                                         </div>
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-lg-flex align-items-center d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/industry/02.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">ИТ и связь</div>
+                                                <div class="submenu-title font-medium ps-3">ИТ и связь</div>
                                             </a>
                                         </div>
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-lg-flex align-items-center d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/industry/03.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">ЖКХ
+                                                <div class="submenu-title font-medium ps-3">ЖКХ
                                                     и энергетика
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-lg-flex align-items-center d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/industry/04.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Медицина</div>
+                                                <div class="submenu-title font-medium ps-3">Медицина</div>
                                             </a>
                                         </div>
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-lg-flex align-items-center d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/industry/05.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">HoReCa и сфера услуг</div>
+                                                <div class="submenu-title font-medium ps-3">HoReCa и сфера услуг</div>
                                             </a>
                                         </div>
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-lg-flex align-items-center d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/industry/06.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Недвижимость</div>
+                                                <div class="submenu-title font-medium ps-3">Недвижимость</div>
                                             </a>
                                         </div>
-                                        <div class="col-4">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <a href="" class="submenu-item d-lg-flex align-items-center d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/industry/07.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Транспорт и логистика</div>
+                                                <div class="submenu-title font-medium ps-3">Транспорт и логистика</div>
                                             </a>
                                         </div>
-                                        <div class="col-4">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <a href="" class="submenu-item d-lg-flex align-items-center d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/industry/08.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Онлайн-ритейл</div>
+                                                <div class="submenu-title font-medium ps-3">Онлайн-ритейл</div>
                                             </a>
                                         </div>
-                                        <div class="col-4">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <a href="" class="submenu-item d-lg-flex align-items-center d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/industry/09.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Другие отрасли</div>
+                                                <div class="submenu-title font-medium ps-3">Другие отрасли</div>
                                             </a>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="tabs-content" id="tasks">
+                                <div class="tabs-content mb-4" id="tasks">
                                     <div class="row">
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/tasks/01.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Маркетинг и реклама</div>
+                                                <div class="submenu-title font-medium ps-3">Маркетинг и реклама</div>
                                             </a>
                                         </div>
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/tasks/02.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Лидогенерация по базе</div>
+                                                <div class="submenu-title font-medium ps-3">Лидогенерация по базе</div>
                                             </a>
                                         </div>
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/tasks/03.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Информирование клиентов</div>
+                                                <div class="submenu-title font-medium ps-3">Информирование клиентов</div>
                                             </a>
                                         </div>
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/tasks/04.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Продажи</div>
+                                                <div class="submenu-title font-medium ps-3">Продажи</div>
                                             </a>
                                         </div>
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/tasks/05.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Сервисная и техподдержка</div>
+                                                <div class="submenu-title font-medium ps-3">Сервисная и техподдержка</div>
                                             </a>
                                         </div>
-                                        <div class="col-4 pb-lg-5">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4 pb-lg-5">
+                                            <a href="" class="submenu-item d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/tasks/06.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Маршрутизация обращений</div>
+                                                <div class="submenu-title font-medium ps-3">Маршрутизация обращений</div>
                                             </a>
                                         </div>
-                                        <div class="col-4">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <a href="" class="submenu-item d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/tasks/07.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Опросы и обратная связь</div>
+                                                <div class="submenu-title font-medium ps-3">Опросы и обратная связь</div>
                                             </a>
                                         </div>
-                                        <div class="col-4">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <a href="" class="submenu-item d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/tasks/08.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Приём и сверка данных</div>
+                                                <div class="submenu-title font-medium ps-3">Приём и сверка данных</div>
                                             </a>
                                         </div>
-                                        <div class="col-4">
-                                            <a href="" class="submenu-item d-lg-flex align-items-center">
+                                        <div class="col-lg-4">
+                                            <a href="" class="submenu-item d-flex align-items-center">
                                                 <div class="submenu-image">
                                                     <img src="assets/img/icons/menu/tasks/09.svg" alt="">
                                                 </div>
-                                                <div class="submenu-title font-medium ps-lg-3">Автоматизация колл-центров</div>
+                                                <div class="submenu-title font-medium ps-3">Автоматизация колл-центров</div>
                                             </a>
                                         </div>
 
@@ -343,7 +344,7 @@
                                 </div>
                             </a>
                             <div class="submenu submenu-medium px-4 py-4 bg-white">
-                                <div class="d-lg-flex align-items-lg-center submenu-list">
+                                <div class="d-flex align-items-center submenu-list">
                                     <img class="img-fluid me-3" src="assets/img/icons/menu/company/01.svg" alt="">
                                     <ul class="flex-lg-fill">
                                         <li class="mb-lg-3">
@@ -363,7 +364,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="d-lg-flex align-items-lg-center submenu-list">
+                                <div class="d-flex align-items-center submenu-list">
                                     <img class="img-fluid me-3" src="assets/img/icons/menu/company/02.svg" alt="">
                                     <ul class="flex-lg-fill">
                                         <li class="mb-lg-3">
@@ -383,7 +384,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="d-lg-flex align-items-lg-center submenu-list">
+                                <div class="d-flex align-items-center submenu-list">
                                     <img class="img-fluid me-3" src="assets/img/icons/menu/company/03.svg" alt="">
                                     <ul class="flex-lg-fill">
                                         <li class="mb-lg-3">
@@ -404,8 +405,8 @@
                 </nav>
                 <button type="button" class="header-search icon-search d-lg-inline-block d-none"></button>
                 <div data-da=".menu,991.98,last" class="header-actions">
-                    <a href="" class="header-btn btn-default">Личный кабинет</a>
-                    <a href="" class="header-btn btn-default d-xxl-inline-block d-none">Магазин ботов</a>
+                    <a href="" class="header-btn mb-4 mb-lg-0 btn-default">Личный кабинет</a>
+                    <a href="" class="header-btn btn-default d-xxl-inline-block d-lg-none">Магазин ботов</a>
                 </div>
                 <button type="button" class="icon-menu d-lg-none">
                     <span></span>

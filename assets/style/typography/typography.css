@@ -84,6 +84,9 @@
     .text-align-lg-right {
         text-align: right;
     }
+    .text-align-lg-center {
+        text-align: center;
+    }
 }
 
 
