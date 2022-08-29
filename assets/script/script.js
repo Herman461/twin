@@ -450,3 +450,61 @@ if (videos.length > 0) {
     window.addEventListener('resize', calculateVideoHeight)
     calculateVideoHeight();
 }
+
+// if (document.querySelectorAll('[data-fancybox]').length > 0) {
+//     Fancybox.bind("[data-fancybox]", {
+//
+//     });
+// }
+
+
+const optionsSlider = new Swiper('.options-slider', {
+    speed: 1000,
+    loop: true,
+    spaceBetween: 30,
+    breakpoints: {
+        1100: {
+            spaceBetween: 50,
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        670: {
+            slidesPerView: 2
+        }
+    },
+    navigation: {
+        nextEl: ".options .button-next",
+        prevEl: ".options .button-prev",
+    },
+})
+
+const clientCasesSlider = new Swiper('.client-cases-slider', {
+    speed: 1000,
+    loop: true,
+    spaceBetween: 30,
+    breakpoints: {
+        1100: {
+            spaceBetween: 50,
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        670: {
+            slidesPerView: 2
+        }
+    },
+    navigation: {
+        nextEl: ".client-cases .button-next",
+        prevEl: ".client-cases .button-prev",
+    },
+})
+
+GreenAudioPlayer.init({
+    selector: '.audio',
+    showTooltips: true,
+})
+
+

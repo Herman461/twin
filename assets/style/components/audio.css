@@ -1,0 +1,20 @@
+.green-audio-player .volume .volume__controls.top {
+    bottom: 0;
+}
+
+.green-audio-player .slider .gap-progress {
+    background: var(--blue);
+}
+.green-audio-player .progress__pin {
+    display: none;
+}
+
+.green-audio-player {
+    width: 100%;
+    min-width: auto;
+    max-width: 300px;
+}
+
+.green-audio-player .controls span {
+    font-size: var(--txt-medium);
+}

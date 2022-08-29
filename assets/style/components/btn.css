@@ -82,7 +82,7 @@
 }
 
 @media (any-hover: hover) {
-    .btn-default:hover {
+    .btn-link-blue:hover {
         border-color: var(--blue);
         background: transparent;
         color: var(--blue);

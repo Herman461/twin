@@ -1,0 +1,32 @@
+.icon {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background: var(--blue);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon img {
+    pointer-events: none;
+}
+
+
+
+@media (max-width: 767.98px) {
+    .icon {
+        width: 81px;
+        height: 81px;
+    }
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.popular-tasks-icon img {
+    width: 57px;
+    height: 57px;
+}

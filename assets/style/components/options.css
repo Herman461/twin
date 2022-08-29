@@ -3,6 +3,9 @@
     padding-bottom: 50px;
     background: url("../../img/options/bg.jpg") center center / cover no-repeat;
 }
+.options {
+    position: relative;
+}
 
 .options-item {
     padding: 15px 15px 20px;
@@ -16,7 +19,12 @@
     height: auto;
     min-height: 100%;
 }
-
+.options-more {
+    position: absolute;
+    bottom: -140px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
 @media (min-width: 991.98px) {
     .options-item {
         padding: 15px 30px;
