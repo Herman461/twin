@@ -456,10 +456,12 @@ each([optionsSlider, clientCasesSlider], initSlider)
 
 function initSlider(item) {
     if (!item) return
+
     const slider = new Swiper(item, {
         speed: 1000,
         loop: true,
         spaceBetween: 30,
+        slidesPerView: 'auto',
         breakpoints: {
             1100: {
                 spaceBetween: 50,
@@ -473,8 +475,8 @@ function initSlider(item) {
             }
         },
         navigation: {
-            nextEl: ".button-next",
-            prevEl: ".button-prev"
+            nextEl: item.parentElement.querySelector(".button-next"),
+            prevEl: item.parentElement.querySelector(".button-prev")
         },
     })
 }

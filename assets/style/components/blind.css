@@ -21,6 +21,14 @@ body.blind .share-label {
 body.blind .share-btn {
     filter: grayscale(100%);
 }
+.blind-form input {
+    width: 300px;
+}
+@media (max-width: 767.98px) {
+    .blind-form input {
+        width: 260px;
+    }
+}
 /*@media (min-width: 991px) {*/
 /*    body.blind .popular-tasks .row > * {*/
 /*        flex: 0 1 50%;*/

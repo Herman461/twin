@@ -34,4 +34,10 @@
     }
 }
 
+@media (max-width: 767.98px) {
+    .swiper-slide {
+        width: 100% !important;
+    }
+}
+
 
