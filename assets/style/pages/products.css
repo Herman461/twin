@@ -108,3 +108,40 @@
         transform: translate(73px, 0);
     }
 }
+
+.share {
+    margin-top: 139px;
+}
+.share-btn {
+    padding: 4px 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.share-btn-vk {
+    background: #4087D9;
+}
+
+.share-btn-telegram {
+    background: #1E96C8;
+}
+
+.share-btn-mail {
+    background: var(--blue);
+}
+
+.share-btn-link {
+    background: #435269;
+}
+
+.share-label {
+    font-size: var(--txt-large);
+    color: #25374E;
+    line-height: calc(24 / 18 * 100%);
+    font-weight: 500;
+}
+
+

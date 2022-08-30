@@ -13,8 +13,8 @@
     margin-bottom: 0;
 }
 
-.what-video iframe {
-    max-width: 100%;
+.what-video img {
+    width: 100%;
 }
 
 

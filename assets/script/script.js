@@ -534,10 +534,34 @@ const usageSlider = new Swiper('.usage-slider', {
 
 
 
+if (document.querySelectorAll('.audio').length > 0) {
+    const audio = GreenAudioPlayer.init({
+        selector: '.audio',
+        showTooltips: true,
+    })
+    const playPauseButtons = document.querySelectorAll('.audio .play-pause-btn')
 
-GreenAudioPlayer.init({
-    selector: '.audio',
-    showTooltips: true,
-})
+    for (let index = 0; index < playPauseButtons.length; index++) {
+        const button = playPauseButtons[index]
 
+        button.addEventListener('click', function(e) {
+            const activeButtons = document.querySelectorAll('.play-pause-btn[title="Pause"]')
+            const audio = button.closest('.audio').querySelector('audio')
+           if (activeButtons.length > 0) {
+               for (let index = 0; index < activeButtons.length; index++) {
+                   const item = activeButtons[index]
+                   const activeAudio = item.closest('.audio')
+                   GreenAudioPlayer.pausePlayer(activeAudio.querySelector('audio'))
+               }
+           }
+
+           if (button.getAttribute('title') === 'Pause') {
+               GreenAudioPlayer.playPlayer(audio)
+           } else {
+               GreenAudioPlayer.pausePlayer(audio)
+           }
+        }, true)
+    }
+
+}
 
