@@ -546,7 +546,7 @@ if (document.querySelectorAll('.audio').length > 0) {
 
         button.addEventListener('click', function(e) {
             const activeButtons = document.querySelectorAll('.play-pause-btn[title="Pause"]')
-            const audio = button.closest('.audio').querySelector('audio')
+            const audio = e.target.closest('.audio').querySelector('audio')
            if (activeButtons.length > 0) {
                for (let index = 0; index < activeButtons.length; index++) {
                    const item = activeButtons[index]
@@ -555,10 +555,12 @@ if (document.querySelectorAll('.audio').length > 0) {
                }
            }
 
-           if (button.getAttribute('title') === 'Pause') {
+           if (e.target.closest('.play-pause-btn').getAttribute('title') === 'Pause') {
                GreenAudioPlayer.playPlayer(audio)
+               console.log('play')
            } else {
                GreenAudioPlayer.pausePlayer(audio)
+               console.log('pause')
            }
         }, true)
     }
