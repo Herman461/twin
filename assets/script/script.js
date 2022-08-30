@@ -533,6 +533,14 @@ const usageSlider = new Swiper('.usage-slider', {
 })
 
 
+// возвращает куки с указанным name,
+function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
 
 if (document.querySelectorAll('.audio').length > 0) {
     const audio = GreenAudioPlayer.init({
@@ -547,17 +555,22 @@ if (document.querySelectorAll('.audio').length > 0) {
         button.addEventListener('click', function(e) {
             const activeButtons = document.querySelectorAll('.play-pause-btn[title="Pause"]')
             const audio = e.target.closest('.audio').querySelector('audio')
+
            if (activeButtons.length > 0) {
                for (let index = 0; index < activeButtons.length; index++) {
                    const item = activeButtons[index]
-                   const activeAudio = item.closest('.audio')
-                   GreenAudioPlayer.pausePlayer(activeAudio.querySelector('audio'))
+                   const activeAudio = item.closest('.audio').querySelector('audio');
+
+                   if (!activeAudio.isEqualNode(audio)) {
+                       GreenAudioPlayer.pausePlayer(activeAudio)
+                   }
+
+
                }
            }
 
            if (e.target.closest('.play-pause-btn').getAttribute('title') === 'Pause') {
                GreenAudioPlayer.playPlayer(audio)
-               console.log('play')
            } else {
                GreenAudioPlayer.pausePlayer(audio)
                console.log('pause')
@@ -566,4 +579,29 @@ if (document.querySelectorAll('.audio').length > 0) {
     }
 
 }
+
+
+window.addEventListener('DOMContentLoaded', function() {
+    if (document.cookie) {
+        if (getCookie('is-blind')) {
+            document.body.classList.add('blind')
+            document.documentElement.style.setProperty('--body-font-size', '28px')
+            document.documentElement.style.setProperty('--blue', '#333333')
+            document.documentElement.style.setProperty('--white-2', '#222222')
+            document.documentElement.style.setProperty('--white', '#111111')
+            document.documentElement.style.setProperty('--dark', '#ffffff')
+            document.documentElement.style.setProperty('--body-font-size', '28px')
+
+        }
+    }
+})
+
+document.querySelector('#blind').addEventListener('click', function(e) {
+    window.scrollTo(0, 0)
+    e.preventDefault()
+    document.cookie = 'is-blind=1'
+
+})
+
+
 

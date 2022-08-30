@@ -1,6 +1,6 @@
 .btn-default {
     background: var(--blue);
-    color: var(--white);
+    color: var(--txt-color-white);
     font-weight: 500;
     font-size: var(--txt-medium);
     display: inline-flex;
@@ -16,7 +16,7 @@
 
 .btn-white {
     background: var(--blue);
-    color: var(--white);
+    color: var(--txt-color-white);
     font-weight: 400;
     font-size: var(--txt-normal);
     display: inline-flex;
@@ -31,7 +31,7 @@
 }
 .btn-small {
     background: var(--blue);
-    color: var(--white);
+    color: var(--txt-color-white);
     font-weight: 500;
     font-size: var(--txt-medium);
     display: inline-flex;
@@ -47,7 +47,7 @@
 
 .submenu-tag {
     background: var(--blue);
-    color: var(--white);
+    color: var(--txt-color-white);
     font-weight: 500;
     font-size: 0.6875rem;
     display: inline-flex;

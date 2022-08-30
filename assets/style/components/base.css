@@ -19,6 +19,7 @@
     --section-spacing: 100px;
     --section-mobile-spacing: 50px;
     --txt-line-height: 142%;
+    --txt-color-white: #ffffff;
     --txt-normal: 1rem;
     --txt-medium: 0.875rem;
     --txt-ultra-small: 0.75rem;
@@ -60,6 +61,8 @@ body.hidden {
 body {
     overflow-x: hidden !important;
 }
+
+
 
 .page {
     overflow-x: hidden !important;

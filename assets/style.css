@@ -4,6 +4,7 @@
 @import "style/components/spacing.css";
 @import "style/typography/typography.css";
 @import "style/components/base.css";
+@import "style/components/blind.css";
 @import "style/components/btn.css";
 @import "style/components/header.css";
 @import "style/typography/iconsfont.css";
