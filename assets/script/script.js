@@ -580,18 +580,20 @@ if (document.querySelectorAll('.audio').length > 0) {
 
 }
 
+function setStyleForBlind() {
+    document.body.classList.add('blind')
+    document.documentElement.style.setProperty('--body-font-size', '28px')
+    document.documentElement.style.setProperty('--blue', '#333333')
+    document.documentElement.style.setProperty('--white-2', '#222222')
+    document.documentElement.style.setProperty('--white', '#111111')
+    document.documentElement.style.setProperty('--dark', '#ffffff')
+    document.documentElement.style.setProperty('--body-font-size', '28px')
 
+}
 window.addEventListener('DOMContentLoaded', function() {
     if (document.cookie) {
         if (getCookie('is-blind')) {
-            document.body.classList.add('blind')
-            document.documentElement.style.setProperty('--body-font-size', '28px')
-            document.documentElement.style.setProperty('--blue', '#333333')
-            document.documentElement.style.setProperty('--white-2', '#222222')
-            document.documentElement.style.setProperty('--white', '#111111')
-            document.documentElement.style.setProperty('--dark', '#ffffff')
-            document.documentElement.style.setProperty('--body-font-size', '28px')
-
+            setStyleForBlind()
         }
     }
 })
@@ -600,7 +602,7 @@ document.querySelector('#blind').addEventListener('click', function(e) {
     window.scrollTo(0, 0)
     e.preventDefault()
     document.cookie = 'is-blind=1'
-
+    setStyleForBlind()
 })
 
 
