@@ -1,7 +1,11 @@
 
 .footer-text {
-    color: var(--white);
+    color: var(--txt-color-white);
     font-size: 0.8125rem;
+}
+
+.footer .text-small {
+    line-height: 125%;
 }
 .footer-nav {
     margin: 0 -16px;

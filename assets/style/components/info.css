@@ -5,6 +5,7 @@
     display: flex;
     border: 1px solid var(--grey-extra-light);
     min-height: 163px;
+    height: 100%;
 }
 
 .info-image img {
@@ -28,6 +29,7 @@
 
 .info-title {
     line-height: 151.88%;
+    transition: all var(--transition) var(--transition-timing) 0s;
 }
 .info > .container-xl {
     position: relative;
@@ -54,5 +56,17 @@
     }
     .info-bg + .info {
         transform: translate(0, -100px);
+    }
+}
+
+@media (any-hover: hover) {
+    .info-item:hover .info-title {
+        color: var(--blue)
+    }
+    .info-item:hover .info-date {
+        color: var(--blue)
+    }
+    .info-item:hover .date-item::after {
+        background: var(--blue) !important;
     }
 }

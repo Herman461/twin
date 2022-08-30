@@ -13,7 +13,7 @@
 }
 
 .client-cases-title {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 .client-cases-text {
@@ -26,7 +26,7 @@
 
 @media (max-width: 767.98px) {
     .client-cases-brand {
-        margin-bottom: 27px;
+        margin-bottom: 1.6875rem;
     }
 }
 

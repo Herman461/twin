@@ -415,12 +415,10 @@ if (menuLinks.length > 0) {
             link.classList.add('active')
         })
         link.addEventListener('click', function(e) {
-            if (e.target.closest('.menu-arrow')) {
-                e.preventDefault()
-                const submenu = link.nextElementSibling
-                submenu.classList.add('active')
-                link.classList.add('active')
-            }
+            e.preventDefault()
+            const submenu = link.nextElementSibling
+            submenu.classList.add('active')
+            link.classList.add('active')
         })
     }
 }
@@ -444,93 +442,78 @@ if (iconMenu) {
         document.body.classList.toggle('hidden')
     })
 }
-
-const videos = document.querySelectorAll('.video iframe')
-
-if (videos.length > 0) {
-    function calculateVideoHeight() {
-        for (let index = 0; index < videos.length; index++) {
-            const video = videos[index]
-            const width = video.clientWidth
-            video.style.height = width / 1.7777 + 'px';
-        }
-    }
-    window.addEventListener('resize', calculateVideoHeight)
-    calculateVideoHeight();
+if (document.querySelector('.options-slider')) {
+    const optionsSlider = new Swiper('.options-slider', {
+        speed: 1000,
+        loop: true,
+        spaceBetween: 30,
+        breakpoints: {
+            1100: {
+                spaceBetween: 50,
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            670: {
+                slidesPerView: 2
+            }
+        },
+        navigation: {
+            nextEl: ".options .button-next",
+            prevEl: ".options .button-prev",
+        },
+    })
 }
 
-// if (document.querySelectorAll('[data-fancybox]').length > 0) {
-//     Fancybox.bind("[data-fancybox]", {
-//
-//     });
-// }
+if (document.querySelector('.client-cases-slider')) {
+    const clientCasesSlider = new Swiper('.client-cases-slider', {
+        speed: 1000,
+        loop: true,
+        spaceBetween: 30,
+        breakpoints: {
+            1100: {
+                spaceBetween: 50,
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            670: {
+                slidesPerView: 2
+            }
+        },
+        navigation: {
+            nextEl: ".client-cases .button-next",
+            prevEl: ".client-cases .button-prev",
+        },
+    })
+}
 
 
-const optionsSlider = new Swiper('.options-slider', {
-    speed: 1000,
-    loop: true,
-    spaceBetween: 30,
-    breakpoints: {
-        1100: {
-            spaceBetween: 50,
-            slidesPerView: 3,
+if (document.querySelector('.usage-slider')) {
+    const usageSlider = new Swiper('.usage-slider', {
+        speed: 1000,
+        spaceBetween: 30,
+        loop: true,
+        breakpoints: {
+            992: {
+                slidesPerView: 3,
+                loop: false,
+                spaceBetween: 0
+            },
+            670: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            }
         },
-        992: {
-            slidesPerView: 3,
+        navigation: {
+            nextEl: ".usage .button-next",
+            prevEl: ".usage .button-prev",
         },
-        670: {
-            slidesPerView: 2
-        }
-    },
-    navigation: {
-        nextEl: ".options .button-next",
-        prevEl: ".options .button-prev",
-    },
-})
+    })
 
-const clientCasesSlider = new Swiper('.client-cases-slider', {
-    speed: 1000,
-    loop: true,
-    spaceBetween: 30,
-    breakpoints: {
-        1100: {
-            spaceBetween: 50,
-            slidesPerView: 3,
-        },
-        992: {
-            slidesPerView: 3,
-        },
-        670: {
-            slidesPerView: 2
-        }
-    },
-    navigation: {
-        nextEl: ".client-cases .button-next",
-        prevEl: ".client-cases .button-prev",
-    },
-})
-
-
-const usageSlider = new Swiper('.usage-slider', {
-    speed: 1000,
-    spaceBetween: 30,
-    loop: true,
-    breakpoints: {
-        992: {
-            slidesPerView: 3,
-            loop: false,
-            spaceBetween: 0
-        },
-        670: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-        }
-    },
-    navigation: {
-        nextEl: ".usage .button-next",
-        prevEl: ".usage .button-prev",
-    },
-})
+}
 
 
 // возвращает куки с указанным name,
@@ -540,6 +523,7 @@ function getCookie(name) {
     ));
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
+
 
 
 if (document.querySelectorAll('.audio').length > 0) {
@@ -581,18 +565,35 @@ if (document.querySelectorAll('.audio').length > 0) {
 }
 
 function setStyleForBlind() {
+    const value = getCookie('blind-value')
     document.body.classList.add('blind')
-    document.documentElement.style.setProperty('--body-font-size', '28px')
+    document.documentElement.style.setProperty('--body-font-size', value + 'px')
     document.documentElement.style.setProperty('--blue', '#333333')
     document.documentElement.style.setProperty('--white-2', '#222222')
     document.documentElement.style.setProperty('--white', '#111111')
     document.documentElement.style.setProperty('--dark', '#ffffff')
-    document.documentElement.style.setProperty('--body-font-size', '28px')
-
+    document.documentElement.style.setProperty('--body-color', '#ffffff')
 }
+
+function removePropertyForBlind() {
+    document.body.classList.remove('blind')
+    document.documentElement.style.removeProperty('--body-font-size')
+    document.documentElement.style.removeProperty('--blue')
+    document.documentElement.style.removeProperty('--white-2')
+    document.documentElement.style.removeProperty('--white')
+    document.documentElement.style.removeProperty('--dark')
+    document.documentElement.style.removeProperty('--body-font-size')
+    document.documentElement.style.removeProperty('--body-color')
+}
+
 window.addEventListener('DOMContentLoaded', function() {
+
     if (document.cookie) {
         if (getCookie('is-blind')) {
+            const blindSlider = document.querySelector('#blind-slider')
+            const blindForm = document.querySelector('.blind-form')
+            blindForm.style.display = 'block'
+            blindSlider.value = getCookie('blind-value')
             setStyleForBlind()
         }
     }
@@ -600,9 +601,23 @@ window.addEventListener('DOMContentLoaded', function() {
 
 document.querySelector('#blind').addEventListener('click', function(e) {
     window.scrollTo(0, 0)
-    e.preventDefault()
-    document.cookie = 'is-blind=1'
+    document.cookie = 'is-blind=1;blind-value=16'
+    document.querySelector('.blind-form').style.display = 'block'
     setStyleForBlind()
+    e.preventDefault()
+})
+
+document.querySelector('#blind-logout').addEventListener('click', function(e) {
+    document.cookie = 'is-blind=1;max-age=-1'
+    document.querySelector('.blind-form').style.display = 'none'
+    removePropertyForBlind()
+
+    e.preventDefault()
+})
+
+document.querySelector('#blind-slider').addEventListener('input', function(e) {
+    document.documentElement.style.setProperty('--body-font-size', e.target.value + 'px')
+    document.cookie = 'blind-value=' + e.target.value
 })
 
 

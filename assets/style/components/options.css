@@ -8,7 +8,6 @@
 }
 
 .options-item {
-    padding: 15px 15px 20px;
     height: 100%;
 }
 
@@ -21,7 +20,7 @@
 }
 .options-more {
     position: absolute;
-    bottom: -140px;
+    bottom: -8.75rem;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -30,9 +29,6 @@
     white-space: nowrap;
 }
 @media (min-width: 991.98px) {
-    .options-item {
-        padding: 15px 30px;
-    }
     .options::before {
         background: url('../../img/backgrounds/options/pattern-left.svg') 0 50% no-repeat;
     }

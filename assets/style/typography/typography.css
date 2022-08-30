@@ -20,7 +20,7 @@
 
 .text-extra-large {
     font-size: 1.25rem;
-    color: var(--white);
+    color: var(--txt-color-white);
     font-weight: 500;
 }
 
@@ -51,9 +51,13 @@
 .text-align-right {
     text-align: right;
 }
+.text-align-left {
+    text-align: left;
+}
+
 
 .text-white {
-    color: var(--white) !important;
+    color: var(--txt-color-white) !important;
 }
 
 .text-blue {
@@ -63,7 +67,6 @@
 .text-small {
     font-size: var(--txt-ultra-small);
     line-height: 174.9%;
-    color: #435269;
 }
 
 

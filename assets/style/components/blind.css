@@ -2,3 +2,16 @@ body.blind {
     background: #111111;
     zoom: 1.3;
 }
+
+
+body.blind img {
+    filter: grayscale(100%);
+}
+body.blind *::before,
+body.blind *::after {
+    filter: grayscale(100%);
+}
+
+.blind-form {
+    display: none;
+}

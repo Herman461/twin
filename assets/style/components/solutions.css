@@ -1,6 +1,5 @@
 .solutions-item {
     text-align: center;
-    margin-bottom: 20px;
 }
 .solutions-icon {
     width: 112px;
@@ -11,7 +10,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .solutions-icon img {

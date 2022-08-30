@@ -188,7 +188,9 @@ body {
     .slider-disabled .swiper-wrapper {
         transform: none !important;
     }
-
+    .bg-lg-light {
+        background: var(--white-2) !important;
+    }
 }
 
 @media (max-width: 1100.98px) {
@@ -210,5 +212,6 @@ body {
         width: 5px;
         height: 5px;
         border-radius: 50%;
+        transition: all var(--transition) var(--transition-timing) 0s;
     }
 }
