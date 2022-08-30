@@ -29,6 +29,8 @@ body.blind .share-btn {
     body.blind .usage-slide {
         flex: 0 1 50%;
     }
-
+    body.blind .solutions .row > * {
+        width: 33.33333333% !important;
+    }
 }
 
