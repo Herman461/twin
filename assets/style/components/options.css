@@ -25,6 +25,10 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
+
+.options-more .btn-default {
+    white-space: nowrap;
+}
 @media (min-width: 991.98px) {
     .options-item {
         padding: 15px 30px;

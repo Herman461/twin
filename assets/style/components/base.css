@@ -15,6 +15,7 @@
     --white: #FFFFFF;
     --white-2: #F6F9FF;
     --light: #CAD8F3;
+    --black: #000000;
     --section-spacing: 100px;
     --section-mobile-spacing: 50px;
     --txt-line-height: 142%;
@@ -57,6 +58,10 @@ body.hidden {
 }
 
 body {
+    overflow-x: hidden !important;
+}
+
+.page {
     overflow-x: hidden !important;
 }
 
@@ -127,19 +132,7 @@ body {
     padding-right: 15px;
     margin-right: 10px;
 }
-.date-item::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    opacity: 0.5;
-    transform: translate(0, -30%);
-    background: var(--dark-2);
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-}
+
 .date-item:last-child::before {
     display: none;
     padding: 0;
@@ -191,8 +184,24 @@ body {
 
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1100.98px) {
     .page {
         padding-top: 60px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .date-item::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        opacity: 0.5;
+        transform: translate(0, -30%);
+        background: var(--dark-2);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
     }
 }

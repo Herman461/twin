@@ -5,6 +5,7 @@
     color: var(--dark);
 }
 
+
 .title-small {
     font-weight: 500;
     line-height: 140.9%;
@@ -97,8 +98,27 @@
     }
 }
 
-@media (max-width: 767.98px) {
 
+@media (max-width: 1240px) {
+    .title-small {
+        font-size: 0.9375rem;
+    }
+    .title-large {
+        font-size: 1.75rem;
+    }
+    .text-large {
+        font-size: var(--txt-normal);
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .title-large {
+        font-size: 1.5rem;
+    }
+    .text-large {
+        font-size: var(--txt-medium);
+    }
 }
 
 

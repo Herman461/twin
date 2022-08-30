@@ -4,9 +4,7 @@
 @import '../components/main-block.css';
 @import '../components/audio.css';
 
-
 @import '../components/intro.css';
-
 @import '../components/what.css';
 @import '../components/solutions.css';
 @import '../components/client-cases.css';
@@ -15,3 +13,98 @@
 @import '../components/options.css';
 @import '../components/integration.css';
 
+
+
+.actions::before {
+    background: url('../../img/backgrounds/actions/pattern-left.svg') 0 50% no-repeat;
+}
+.actions::after {
+    background: url('../../img/backgrounds/actions/pattern-right.svg') 100% 50% no-repeat;
+}
+
+@media (max-width: 767.98px) {
+    .actions::before {
+        background: url('../../img/backgrounds/actions/pattern-top.svg') 50% 0 no-repeat;
+    }
+    .actions::after {
+        background: url('../../img/backgrounds/actions/pattern-bottom.svg') 50% 100% no-repeat;
+    }
+}
+.usage-slider {
+    overflow: visible;
+}
+.usage-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.usage-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.usage-icon {
+    width: 69px;
+    z-index: 4;
+    height: 69px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue);
+    position: absolute;
+    border-radius: 50%;
+    top: -34.5px;
+    left: 0;
+    transform: translate(23px, 0);
+}
+
+.usage-icon img {
+    width: 46px;
+    height: 46px;
+}
+
+@media (max-width: 767.98px) {
+    .usage-icon {
+        top: -33.5px;
+        width: 57px;
+        height: 57px;
+    }
+    .usage-icon img {
+        width: 31px;
+        height: 31px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .usage-slider .swiper-wrapper {
+        flex-wrap: wrap;
+        margin: 0 -20px;
+        transform: none !important;
+        width: auto !important;
+    }
+    .usage-slide {
+        padding: 0 20px;
+        flex: 0 1 33.333%;
+        width: auto !important;
+        margin-bottom: 3.75rem;
+        height: auto !important;
+    }
+    .usage-icon {
+        transform: translate(40px, 0);
+    }
+}
+
+
+@media (min-width: 1240px) {
+    .usage-slider .swiper-wrapper {
+        margin: 0 -45px;
+    }
+    .usage-slide {
+        padding: 0 45px;
+    }
+
+    .usage-icon {
+        transform: translate(73px, 0);
+    }
+}

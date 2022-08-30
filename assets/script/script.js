@@ -403,7 +403,7 @@ if (menuLinks.length > 0) {
         if (!link.nextElementSibling || !link.nextElementSibling.classList.contains('submenu')) continue
 
         link.addEventListener('mouseenter', function() {
-            if (!window.matchMedia("(min-width: 991.98px)").matches) return
+            if (!window.matchMedia("(min-width: 1100.98px)").matches) return
             if (document.querySelector('.submenu.active')) {
                 const activeSubmenu = document.querySelector('.submenu.active')
                 activeSubmenu.classList.remove('active')
@@ -414,12 +414,20 @@ if (menuLinks.length > 0) {
             submenu.classList.add('active')
             link.classList.add('active')
         })
+        link.addEventListener('click', function(e) {
+            if (e.target.closest('.menu-arrow')) {
+                e.preventDefault()
+                const submenu = link.nextElementSibling
+                submenu.classList.add('active')
+                link.classList.add('active')
+            }
+        })
     }
 }
 
 
 window.addEventListener('mousemove', function(e) {
-    if (!window.matchMedia("(min-width: 991.98px)").matches) return
+    if (!window.matchMedia("(min-width: 1100.98px)").matches) return
     if (document.querySelector('.submenu.active') && !e.target.closest('.header')) {
         document.querySelector('.submenu.active').classList.remove('active')
         document.querySelector('.menu-link.active').classList.remove('active')
@@ -501,6 +509,31 @@ const clientCasesSlider = new Swiper('.client-cases-slider', {
         prevEl: ".client-cases .button-prev",
     },
 })
+
+
+const usageSlider = new Swiper('.usage-slider', {
+    speed: 1000,
+    spaceBetween: 30,
+    loop: true,
+    breakpoints: {
+        992: {
+            slidesPerView: 3,
+            loop: false,
+            spaceBetween: 0
+        },
+        670: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        }
+    },
+    navigation: {
+        nextEl: ".usage .button-next",
+        prevEl: ".usage .button-prev",
+    },
+})
+
+
+
 
 GreenAudioPlayer.init({
     selector: '.audio',

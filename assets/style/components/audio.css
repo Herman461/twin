@@ -11,10 +11,30 @@
 
 .green-audio-player {
     width: 100%;
-    min-width: auto;
-    max-width: 300px;
+    min-width: 300px;
 }
+.green-audio-player .volume .volume__button.open path {
+    fill: var(--blue);
 
+}
+.green-audio-player .slider .gap-progress .pin {
+    background: var(--blue);
+}
 .green-audio-player .controls span {
     font-size: var(--txt-medium);
+    font-family: var(--body-font-family);
+    color: var(--black);
+}
+
+@media (max-width: 767.98px) {
+    .green-audio-player {
+        min-width: 328px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .green-audio-player {
+        min-width: 280px;
+    }
 }

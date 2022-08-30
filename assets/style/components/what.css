@@ -9,12 +9,6 @@
 .what-list {
 }
 
-.what-item {
-    font-size: var(--txt-large);
-    line-height: var(--txt-line-height);
-    margin-bottom: 10px;
-}
-
 .what-item:last-child {
     margin-bottom: 0;
 }

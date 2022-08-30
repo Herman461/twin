@@ -65,13 +65,17 @@
     .footer-nav {
         margin: 0 -17.5px;
     }
-    .footer-list {
-        padding: 0 17.5px;
-    }
+
 }
 @media (min-width: 767.98px) {
     .footer-list {
         flex: 1 1 auto;
+    }
+}
+
+@media (min-width: 1100.98px) {
+    .footer-list {
+        padding: 0 17.5px;
     }
 }
 
