@@ -15,3 +15,20 @@ body.blind *::after {
 .blind-form {
     display: none;
 }
+
+body.blind .share-label {
+    color: #fff !important;
+}
+body.blind .share-btn {
+    filter: grayscale(100%);
+}
+@media (min-width: 991px) {
+    body.blind .popular-tasks .row > * {
+        flex: 0 1 50%;
+    }
+    body.blind .usage-slide {
+        flex: 0 1 50%;
+    }
+
+}
+

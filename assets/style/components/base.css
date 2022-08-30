@@ -2,7 +2,7 @@
     --body-font-family: "StyreneALC";
     --body-font-weight: 400;
     --body-color: #435269;
-    --body-font-size: 16px;
+    --body-font-size: --bs-body-font-size;
     /*--body-adaptive-font-size: 14px;*/
     --body-font-style: normal;
     --grey: #717984;
