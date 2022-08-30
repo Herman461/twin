@@ -30,3 +30,12 @@
     width: 57px;
     height: 57px;
 }
+
+a .icon + p {
+    transition: all var(--transition) var(--transition-timing) 0s;
+}
+@media (any-hover: hover) {
+    a:hover .icon + p {
+        color: var(--blue);
+    }
+}

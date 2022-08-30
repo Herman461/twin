@@ -1,6 +1,5 @@
 body.blind {
     background: #111111;
-    zoom: 1.3;
 }
 
 
@@ -22,15 +21,15 @@ body.blind .share-label {
 body.blind .share-btn {
     filter: grayscale(100%);
 }
-@media (min-width: 991px) {
-    body.blind .popular-tasks .row > * {
-        flex: 0 1 50%;
-    }
-    body.blind .usage-slide {
-        flex: 0 1 50%;
-    }
-    body.blind .solutions .row > * {
-        width: 33.33333333% !important;
-    }
-}
+/*@media (min-width: 991px) {*/
+/*    body.blind .popular-tasks .row > * {*/
+/*        flex: 0 1 50%;*/
+/*    }*/
+/*    body.blind .usage-slide {*/
+/*        flex: 0 1 50%;*/
+/*    }*/
+/*    body.blind .solutions .row > * {*/
+/*        width: 33.33333333% !important;*/
+/*    }*/
+/*}*/
 

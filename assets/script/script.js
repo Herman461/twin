@@ -442,8 +442,21 @@ if (iconMenu) {
         document.body.classList.toggle('hidden')
     })
 }
-if (document.querySelector('.options-slider')) {
-    const optionsSlider = new Swiper('.options-slider', {
+
+function each(arr, callback) {
+    arr.forEach(function (el, i) {
+        callback(el, i, arr);
+    })
+}
+
+const optionsSlider = document.querySelector('.options-slider')
+const clientCasesSlider = document.querySelector('.client-cases-slider')
+
+each([optionsSlider, clientCasesSlider], initSlider)
+
+function initSlider(item) {
+    if (!item) return
+    const slider = new Swiper(item, {
         speed: 1000,
         loop: true,
         spaceBetween: 30,
@@ -460,36 +473,11 @@ if (document.querySelector('.options-slider')) {
             }
         },
         navigation: {
-            nextEl: ".options .button-next",
-            prevEl: ".options .button-prev",
+            nextEl: ".button-next",
+            prevEl: ".button-prev"
         },
     })
 }
-
-if (document.querySelector('.client-cases-slider')) {
-    const clientCasesSlider = new Swiper('.client-cases-slider', {
-        speed: 1000,
-        loop: true,
-        spaceBetween: 30,
-        breakpoints: {
-            1100: {
-                spaceBetween: 50,
-                slidesPerView: 3,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-            670: {
-                slidesPerView: 2
-            }
-        },
-        navigation: {
-            nextEl: ".client-cases .button-next",
-            prevEl: ".client-cases .button-prev",
-        },
-    })
-}
-
 
 if (document.querySelector('.usage-slider')) {
     const usageSlider = new Swiper('.usage-slider', {
@@ -516,7 +504,7 @@ if (document.querySelector('.usage-slider')) {
 }
 
 
-// возвращает куки с указанным name,
+// возвращает куки с указанным name
 function getCookie(name) {
     let matches = document.cookie.match(new RegExp(
         "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -567,7 +555,7 @@ if (document.querySelectorAll('.audio').length > 0) {
 function setStyleForBlind() {
     const value = getCookie('blind-value')
     document.body.classList.add('blind')
-    document.documentElement.style.setProperty('--body-font-size', value + 'px')
+    document.body.style.zoom = value
     document.documentElement.style.setProperty('--blue', '#333333')
     document.documentElement.style.setProperty('--white-2', '#222222')
     document.documentElement.style.setProperty('--white', '#111111')
@@ -577,12 +565,12 @@ function setStyleForBlind() {
 
 function removePropertyForBlind() {
     document.body.classList.remove('blind')
+    document.body.style.zoom = 1
     document.documentElement.style.removeProperty('--body-font-size')
     document.documentElement.style.removeProperty('--blue')
     document.documentElement.style.removeProperty('--white-2')
     document.documentElement.style.removeProperty('--white')
     document.documentElement.style.removeProperty('--dark')
-    document.documentElement.style.removeProperty('--body-font-size')
     document.documentElement.style.removeProperty('--body-color')
 }
 
@@ -601,7 +589,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 document.querySelector('#blind').addEventListener('click', function(e) {
     window.scrollTo(0, 0)
-    document.cookie = 'is-blind=1;blind-value=16'
+    document.cookie = 'is-blind=1;blind-value=1'
     document.querySelector('.blind-form').style.display = 'block'
     setStyleForBlind()
     e.preventDefault()
@@ -616,7 +604,7 @@ document.querySelector('#blind-logout').addEventListener('click', function(e) {
 })
 
 document.querySelector('#blind-slider').addEventListener('input', function(e) {
-    document.documentElement.style.setProperty('--body-font-size', e.target.value + 'px')
+    document.body.style.zoom = e.target.value
     document.cookie = 'blind-value=' + e.target.value
 })
 
