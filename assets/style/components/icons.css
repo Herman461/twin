@@ -24,7 +24,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: var(--blue);
+    color: var(--txt-color-blue);
     background: var(--white);
     border: 1px solid var(--blue);
     border-radius: 50%;

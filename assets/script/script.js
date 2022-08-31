@@ -563,6 +563,7 @@ function setStyleForBlind() {
     document.documentElement.style.setProperty('--white', '#111111')
     document.documentElement.style.setProperty('--dark', '#ffffff')
     document.documentElement.style.setProperty('--body-color', '#ffffff')
+    document.documentElement.style.setProperty('--txt-color-blue', '#ffffff')
 }
 
 function removePropertyForBlind() {
@@ -574,6 +575,7 @@ function removePropertyForBlind() {
     document.documentElement.style.removeProperty('--white')
     document.documentElement.style.removeProperty('--dark')
     document.documentElement.style.removeProperty('--body-color')
+    document.documentElement.style.removeProperty('--txt-color-blue')
 }
 
 window.addEventListener('DOMContentLoaded', function() {

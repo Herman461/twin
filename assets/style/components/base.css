@@ -20,6 +20,7 @@
     --section-mobile-spacing: 50px;
     --txt-line-height: 142%;
     --txt-color-white: #ffffff;
+    --txt-color-blue: #007BFF;
     --txt-normal: 1rem;
     --txt-medium: 0.875rem;
     --txt-ultra-small: 0.75rem;
@@ -98,6 +99,10 @@ body {
 /*    }*/
 
 /*}*/
+
+.link {
+    color: var(--txt-color-blue);
+}
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -213,5 +218,11 @@ body {
         height: 5px;
         border-radius: 50%;
         transition: all var(--transition) var(--transition-timing) 0s;
+    }
+}
+
+@media (any-hover: hover) {
+    .link:hover {
+        text-decoration: underline;
     }
 }
