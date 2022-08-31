@@ -1,3 +1,22 @@
 .main-block-text {
     max-width: 820px;
 }
+
+
+
+@media (min-width: 1240px) {
+    .main-block.bg-default::before {
+        height: 210%;
+        background: url('../../img/backgrounds/main-block/pattern-left.svg') 0 100% / contain no-repeat;
+    }
+    .main-block.bg-default::after {
+        height: 210%;
+        background: url('../../img/backgrounds/main-block/pattern-right.svg') 100% 100% / contain no-repeat;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main-block.bg-default::after {
+        background: url('../../img/backgrounds/main-block/pattern-bottom.svg') 50% 100% / contain no-repeat;
+    }
+}

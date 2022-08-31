@@ -7,10 +7,27 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 .icon img {
     pointer-events: none;
+}
+
+.icon-step {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 32px;
+    min-height: 32px;
+    padding: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    background: var(--white);
+    border: 1px solid var(--blue);
+    border-radius: 50%;
 }
 
 
@@ -24,6 +41,11 @@
         width: 40px;
         height: 40px;
     }
+    .icon-step {
+        min-width: 24px;
+        min-height: 24px;
+    }
+
 }
 
 .popular-tasks-icon img {

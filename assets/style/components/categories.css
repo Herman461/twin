@@ -1,9 +1,4 @@
-.categories::before {
-    background: url('../../img/backgrounds/categories/pattern-left.svg') 0 50% no-repeat;
-}
-.categories::after {
-    background: url('../../img/backgrounds/categories/pattern-right.svg') 100% 50% no-repeat;
-}
+
 .categories-item {
     padding: 1.5625rem 1.5625rem 1.875rem;
     height: 100%;

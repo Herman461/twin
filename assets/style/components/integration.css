@@ -9,4 +9,12 @@
     .integration-image-mobile {
         display: none;
     }
+    .integration .row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .integration .row:nth-child(even) .integration-content {
+        text-align: right !important;
+    }
+
 }
