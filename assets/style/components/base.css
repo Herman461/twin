@@ -172,6 +172,9 @@ body {
     flex: 1 1 100%;
 }
 
+.fancybox__content :focus:not(.carousel__button.is-close) {
+    outline: none !important;
+}
 
 
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
