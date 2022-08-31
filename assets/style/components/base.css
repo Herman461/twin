@@ -191,6 +191,12 @@ body {
     border-radius: var(--border-radius-normal);
 }
 
+.action-image-small {
+    max-width: 196px;
+    height: 276px;
+    object-fit: cover;
+}
+
 
 @media (min-width: 991.98px) {
     .slider-disabled .swiper-wrapper {
