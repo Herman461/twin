@@ -10,10 +10,9 @@
 }
 
 .green-audio-player {
-    max-width: 320px;
     margin: 0 auto;
     min-width: auto;
-    width: 100% !important;
+    width: 350px;
 }
 .green-audio-player .volume .volume__button.open path {
     fill: var(--blue);
