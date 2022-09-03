@@ -19,6 +19,10 @@
         margin-right: calc(-1 * var(--gutter-8));
         margin-left: calc(-1 * var(--gutter-8));
     }
+    .row-spacing-lg-5 {
+        margin-right: calc(-1 * var(--gutter-5));
+        margin-left: calc(-1 * var(--gutter-5));
+    }
 }
 
 .mt-0 {

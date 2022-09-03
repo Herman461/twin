@@ -64,3 +64,9 @@
     color: var(--grey-light);
     cursor: pointer;
 }
+
+@media (max-width: 1240px) {
+    .select__head {
+        font-size: var(--txt-normal);
+    }
+}

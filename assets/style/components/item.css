@@ -18,3 +18,24 @@
     position: relative;
 }
 
+.item-image-big {
+    flex: 0 0 235px;
+    width: 235px;
+}
+
+@media (min-width: 1100px) {
+    .item-top {
+        display: flex;
+    }
+}
+
+@media (max-width: 1100px) {
+    .item-top .date-item::after {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .item-image-big {
+        margin: 0 auto;
+    }
+}
