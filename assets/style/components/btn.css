@@ -45,6 +45,20 @@
     transition: all var(--transition) var(--transition-timing)  0s;
 }
 
+.tag {
+    background: var(--white-2);
+    color: var(--grey);
+    font-size: var(--txt-ultra-small);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 12px;
+    line-height: calc(18.4 / 14 * 100%);
+    transition: all var(--transition) var(--transition-timing)  0s;
+}
+
 .submenu-tag {
     background: var(--blue);
     color: var(--txt-color-white);
@@ -86,5 +100,9 @@
         border-color: var(--blue);
         background: transparent;
         color: var(--blue);
+    }
+    .tag:hover {
+        background: var(--blue);
+        color: var(--txt-color-white);
     }
 }

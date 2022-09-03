@@ -221,7 +221,7 @@ body {
         top: 50%;
         right: 0;
         opacity: 0.5;
-        transform: translate(0, -30%);
+        transform: translate(0, -50%);
         background: var(--dark-2);
         width: 5px;
         height: 5px;

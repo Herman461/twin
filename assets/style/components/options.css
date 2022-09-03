@@ -29,10 +29,22 @@
     white-space: nowrap;
 }
 @media (min-width: 991.98px) {
-    .options::before {
+    .options.bg-default::before {
         background: url('../../img/backgrounds/options/pattern-left.svg') 0 50% no-repeat;
     }
-    .options::after {
+    .options.bg-default::after {
         background: url('../../img/backgrounds/options/pattern-right.svg') 100% 50% no-repeat;
+    }
+
+    .options.bg-light::before {
+        background: url('../../img/backgrounds/options/pattern-left-blue.svg') 0 50% no-repeat;
+    }
+    .options.bg-light::after {
+        background: url('../../img/backgrounds/options/pattern-right-blue.svg') 100% 50% no-repeat;
+    }
+}
+@media (max-width: 991.98px) {
+    .options.bg-light::after {
+        background: url('../../img/backgrounds/options/pattern-bottom-blue.svg') 50% 100% no-repeat;
     }
 }

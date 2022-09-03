@@ -1,0 +1,29 @@
+.paging-item {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--blue);
+    border-radius: 2px;
+    font-weight: 300;
+    font-size: var(--txt-medium);
+    position: relative;
+    transition: all var(--transition) var(--transition-timing) 0s;
+}
+
+.paging-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: calc(100% + 1px);
+    height: 100%;
+    background: transparent;
+    opacity: 0;
+}
+
+.paging-item.active::before {
+    background: var(--blue);
+    opacity: 0.3;
+}

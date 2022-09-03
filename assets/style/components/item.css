@@ -1,0 +1,20 @@
+.item {
+    border: 1px solid var(--grey-extra-light);
+}
+
+.item-image {
+    height: 100px;
+}
+
+.item-text {
+    font-size: var(--txt-medium);
+    line-height: var(--txt-line-height);
+}
+
+.item-label {
+    color: var(--dark-2);
+    font-size: 0.8125rem;
+    line-height: calc(17 / 13 * 100%);
+    position: relative;
+}
+
