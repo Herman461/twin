@@ -16,6 +16,7 @@
     --white-2: #F6F9FF;
     --light: #CAD8F3;
     --black: #000000;
+    --placeholder-color: #D2D0D0;
     --section-spacing: 100px;
     --section-mobile-spacing: 50px;
     --txt-line-height: 142%;
@@ -100,9 +101,7 @@ body {
 
 /*}*/
 
-.link {
-    color: var(--txt-color-blue);
-}
+
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -190,6 +189,19 @@ body {
 .br-normal {
     border-radius: var(--border-radius-normal);
 }
+.br-small {
+    border-radius: 5px;
+}
+
+.b-blue {
+    border: 1px solid var(--txt-color-blue);
+}
+
+.b-grey {
+    border: 1px solid var(--grey-extra-light);
+}
+
+
 
 .action-image-small {
     max-width: 196px;
@@ -230,8 +242,50 @@ body {
     }
 }
 
-@media (any-hover: hover) {
-    .link:hover {
-        text-decoration: underline;
-    }
+
+.list li {
+    position: relative;
+    padding-left: 0.9375rem;
+    line-height: var(--txt-line-height);
+}
+
+.list li::before {
+    content: "";
+    position: absolute;
+    top: 10.5px;
+    left: 0;
+    width: 0.3125rem;
+    height: 0.3125rem;
+    border-radius: 50%;
+    background: var(--txt-color-blue);
+}
+
+.input input {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+}
+.input {
+    position: relative;
+    padding: 0 0.9375rem;
+}
+.input::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input input:focus::placeholder {
+    color: transparent;
+}
+
+.input input::placeholder {
+    color: var(--placeholder-color);
 }

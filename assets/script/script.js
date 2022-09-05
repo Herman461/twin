@@ -667,6 +667,7 @@ function setStyleForBlind() {
     document.documentElement.style.setProperty('--body-color', '#ffffff')
     document.documentElement.style.setProperty('--txt-color-blue', '#ffffff')
     document.documentElement.style.setProperty('--grey-light', '#ffffff')
+    document.documentElement.style.setProperty('--placeholder-color', '#ffffff')
 }
 
 function removePropertyForBlind() {
@@ -680,6 +681,7 @@ function removePropertyForBlind() {
     document.documentElement.style.removeProperty('--body-color')
     document.documentElement.style.removeProperty('--grey-light')
     document.documentElement.style.removeProperty('--txt-color-blue')
+    document.documentElement.style.removeProperty('--placeholder-color')
 }
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -715,6 +717,37 @@ document.querySelector('#blind-slider').addEventListener('input', function(e) {
     document.body.style.zoom = e.target.value
     document.cookie = 'blind-value=' + e.target.value
 })
+
+
+if (document.querySelector('#copyToClipBoardBtn')) {
+    const copyUrlBtn = document.querySelector('#copyToClipBoardBtn');
+
+    if (copyUrlBtn) {
+        copyUrlBtn.addEventListener('click', function(e) {
+            let tempInput = document.createElement('textarea');
+
+            tempInput.style.fontSize = '12pt';
+            tempInput.style.border = '0';
+            tempInput.style.padding = '0';
+            tempInput.style.margin = '0';
+            tempInput.style.position = 'absolute';
+            tempInput.style.left = '-9999px';
+            tempInput.setAttribute('readonly', '');
+
+            tempInput.value = window.location.href;
+
+            copyUrlBtn.parentNode.appendChild(tempInput);
+
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999);
+
+            document.execCommand('copy');
+
+            tempInput.parentNode.removeChild(tempInput);
+            e.preventDefault()
+        });
+    }
+}
 
 
 

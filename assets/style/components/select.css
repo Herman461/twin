@@ -69,4 +69,7 @@
     .select__head {
         font-size: var(--txt-normal);
     }
+    .select__list {
+        transform: translate(-60%, 0);
+    }
 }

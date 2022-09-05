@@ -93,9 +93,34 @@
     font-size: var(--txt-medium);
     line-height: var(--txt-line-height);
 }
+
+.text-normal {
+    line-height: var(--txt-line-height);
+}
+
 .text-blue {
     color: var(--blue) !important;
 }
+
+.link {
+    color: var(--txt-color-blue);
+}
+.link-medium {
+    color: var(--txt-color-blue);
+    font-size: 0.9375rem;
+}
+
+b {
+    font-size: 0.9375rem !important;
+    font-weight: 500 !important;
+}
+
+@media (any-hover: hover) {
+    .link:hover {
+        text-decoration: underline;
+    }
+}
+
 
 @media (min-width: 767.98px) {
     .text-align-md-left {
