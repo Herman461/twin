@@ -1,0 +1,31 @@
+@import '../components/share.css';
+@import '../components/item.css';
+@import '../plugins/audio-player.min.css';
+@import '../plugins/fancybox.css';
+@import '../components/audio.css';
+
+.case-image {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.case-image img {
+    width: 200px;
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .case-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .case-image {
+        height: 80px;
+    }
+    .case-image img {
+        width: 120px;
+    }
+}

@@ -98,6 +98,10 @@
     line-height: var(--txt-line-height);
 }
 
+.text-black {
+    color: var(--dark) !important;
+}
+
 .text-blue {
     color: var(--blue) !important;
 }
@@ -181,9 +185,12 @@ b {
     .title-large {
         font-size: 1.5rem;
     }
-    .text-large {
+    .text-normal {
         font-size: var(--txt-medium);
     }
+    /*.text-large {*/
+    /*    font-size: var(--txt-medium);*/
+    /*}*/
 }
 
 

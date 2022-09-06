@@ -14,6 +14,13 @@
     min-width: auto;
     width: 350px;
 }
+
+.audio-small.green-audio-player {
+    width: 300px;
+    background: var(--white-2) !important;
+    margin: 0;
+    box-shadow: none !important;
+}
 .green-audio-player .volume .volume__button.open path {
     fill: var(--blue);
 
