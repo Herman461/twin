@@ -1,2 +1,9 @@
 @import '../components/share.css';
 @import '../components/item.css';
+
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .article-image {
+        max-width: 80%;
+    }
+}

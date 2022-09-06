@@ -87,7 +87,7 @@
 .text-dark {
     font-size: var(--txt-medium);
     line-height: var(--txt-line-height);
-    color: var(--dark)
+    color: var(--dark);
 }
 .text {
     font-size: var(--txt-medium);
@@ -115,9 +115,16 @@ b {
     font-weight: 500 !important;
 }
 
+.blue-hover {
+    transition: all 0.3s ease 0s;
+}
+
 @media (any-hover: hover) {
     .link:hover {
         text-decoration: underline;
+    }
+    .blue-hover:hover {
+        color: var(--txt-color-blue) !important;
     }
 }
 
@@ -161,6 +168,14 @@ b {
 
 }
 
+@media (max-width: 991.98px) {
+    .title-large br {
+        display: none;
+    }
+    .text-large br {
+        display: none;
+    }
+}
 
 @media (max-width: 767.98px) {
     .title-large {

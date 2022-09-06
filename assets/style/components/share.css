@@ -9,7 +9,10 @@
     border-radius: 25px;
     text-align: center;
 }
-
+.share-btn img {
+    width: 18px;
+    height: 18px;
+}
 .share-btn-vk {
     background: #4087D9;
 }

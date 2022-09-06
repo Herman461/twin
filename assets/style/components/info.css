@@ -66,7 +66,7 @@
     .info-item:hover .info-date {
         color: var(--blue)
     }
-    .info-item:hover .date-item::after {
+    .info-item:hover .circle::after {
         background: var(--blue) !important;
     }
 }

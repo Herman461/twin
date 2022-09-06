@@ -138,13 +138,13 @@ body {
 }
 
 
-.date-item {
+.circle {
     position: relative;
     padding-right: 15px;
     margin-right: 10px;
 }
 
-.date-item:last-child::before {
+.circle:last-child::before {
     display: none;
     padding: 0;
     margin: 0;
@@ -226,11 +226,11 @@ body {
 }
 
 @media (min-width: 767.98px) {
-    .date-item::after {
+    .circle::after {
         content: "";
         display: inline-block;
         position: absolute;
-        top: 50%;
+        top: calc(50% + 1px);
         right: 0;
         opacity: 0.5;
         transform: translate(0, -50%);
@@ -289,3 +289,4 @@ body {
 .input input::placeholder {
     color: var(--placeholder-color);
 }
+
