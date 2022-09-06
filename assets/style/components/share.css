@@ -8,7 +8,10 @@
     justify-content: center;
     border-radius: 25px;
     text-align: center;
+    min-width: 93px;
 }
+
+
 .share-btn img {
     width: 18px;
     height: 18px;
@@ -36,3 +39,22 @@
     font-weight: 500;
 }
 
+@media (max-width: 767.98px) {
+    .share-adaptive {
+        margin: 0 -16px;
+        border-radius: 0 !important;
+    }
+    .share-btn {
+        min-width: 83px;
+        padding: 4px 9px;
+    }
+}
+
+@media (max-width: 360px) {
+    .share-adaptive .share-body {
+        flex-wrap: wrap;
+    }
+    .share-adaptive .share-label {
+        margin: 0 auto 1.25rem auto !important;
+    }
+}

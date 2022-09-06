@@ -649,7 +649,6 @@ if (document.querySelectorAll('.audio').length > 0) {
                GreenAudioPlayer.playPlayer(audio)
            } else {
                GreenAudioPlayer.pausePlayer(audio)
-               console.log('pause')
            }
         }, true)
     }
