@@ -57,7 +57,7 @@
 .select__item {
     padding: 15px 25px;
     -webkit-transition: color 0.3s ease 0s;
-    transition: color 0.3s ease 0s;
+    transition: color var(--transition) var(--transition-timing) 0s;
     font-size: 16px;
     line-height: 162.4%;
     letter-spacing: 0.03em;
@@ -71,5 +71,11 @@
     }
     .select__list {
         transform: translate(-60%, 0);
+    }
+}
+
+@media (any-hover: hover) {
+    .select__item:hover {
+        color: var(--txt-color-blue);
     }
 }
