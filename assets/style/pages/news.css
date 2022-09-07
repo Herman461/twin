@@ -1,0 +1,33 @@
+@import '../components/share.css';
+@import '../components/select.css';
+@import '../components/info.css';
+@import '../components/paging.css';
+@import '../components/item.css';
+@import '../plugins/fancybox.css';
+
+
+.news-result-image {
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 767.98px) {
+    .news-result-image {
+        height: 222px;
+    }
+}
+@media (min-width: 991.98px) {
+    .news-result-video-preview {
+        height: 418px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .news-result .date {
+        display: none;
+    }
+}
+

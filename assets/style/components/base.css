@@ -305,3 +305,17 @@ body {
     border-radius: 50%;
     transition: all var(--transition) var(--transition-timing) 0s;
 }
+
+
+@media (max-width: 640px) {
+    .date-bottom {
+        display: flex !important;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 640px) {
+    .date-bottom {
+        display: none;
+    }
+}
