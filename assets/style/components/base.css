@@ -219,11 +219,18 @@ body {
     }
 }
 
-@media (max-width: 1100.98px) {
+@media (max-width: 991.98px) {
     .page {
-        padding-top: 60px;
+        padding-top: 60px !important;
     }
 }
+
+@media (max-width: 1100px) {
+    .page {
+        padding-top: 80px !important;
+    }
+}
+
 
 @media (min-width: 767.98px) {
     .circle::after {
@@ -317,5 +324,14 @@ body {
 @media (min-width: 640px) {
     .date-bottom {
         display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .list li {
+        font-size: var(--txt-medium);
+    }
+    .list li::before {
+        top: 6.5px;
     }
 }

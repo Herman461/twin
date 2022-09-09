@@ -1,0 +1,20 @@
+@import '../components/share.css';
+@import '../components/select.css';
+@import '../components/info.css';
+@import '../components/paging.css';
+@import '../components/item.css';
+
+
+.calendar-result-image {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+@media (max-width: 640px) {
+    .calendar-result .date {
+        display: none;
+    }
+}
+
