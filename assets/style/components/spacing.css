@@ -28,6 +28,19 @@
         margin-right: calc(-1 * var(--gutter-4));
         margin-left: calc(-1 * var(--gutter-4));
     }
+    .row-spacing-lg-3 {
+        margin-right: calc(-1 * var(--gutter-3));
+        margin-left: calc(-1 * var(--gutter-3));
+    }
+
+}
+
+@media (min-width: 767.98px) {
+    .row-spacing-md-7 {
+        margin-right: calc(-1 * var(--gutter-7));
+        margin-left: calc(-1 * var(--gutter-7));
+    }
+
 }
 
 .mt-0 {

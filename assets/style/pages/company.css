@@ -1,0 +1,42 @@
+@import '../components/item.css';
+@import '../plugins/fancybox.css';
+
+.history-year {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.history-item {
+    position: relative;
+}
+
+.history-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--light);
+}
+
+.history-item::after {
+    content: "";
+    position: absolute;
+    height: calc(100% - 13px + 1.5625rem);
+    width: 1px;
+    left: 6px;
+    top: 13px;
+    background: var(--light);
+}
+
+.history-item:last-child::after {
+    height: calc(100% - 13px);
+}
+
+.achievements-image img {
+    width: 100%;
+    height: 292px;
+    object-fit: contain;
+}

@@ -1,0 +1,60 @@
+@import '../components/main-block.css';
+@import '../components/swiper.css';
+@import '../components/options.css';
+
+
+
+.percent-item {
+    width: 111px;
+    height: 111px;
+    background: var(--white);
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 2rem;
+    color: var(--txt-color-blue);
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 991.98px) {
+    .percent::before {
+        background: url('../../img/backgrounds/percent/pattern-left.svg') 0 100% no-repeat;
+    }
+    .percent::after {
+        background: url('../../img/backgrounds/percent/pattern-right.svg') 100% 100% no-repeat;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .percent::before {
+        background: url('../../img/backgrounds/percent/pattern-top.svg') 50% 0 no-repeat;
+    }
+    .percent::after {
+        background: url('../../img/backgrounds/percent/pattern-bottom.svg') 50% 100% no-repeat;
+    }
+    .percent-item {
+        width: 81px;
+        height: 81px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .partners-image {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+    .partners-image img {
+        width: 100%;
+    }
+    .partners-item {
+        text-align: center;
+    }
+}
+@media (min-width: 767.98px) {
+    .partners-image {
+        display: flex;
+        justify-content: center;
+    }
+}
+
