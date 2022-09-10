@@ -207,6 +207,11 @@
 @media (any-hover: hover) {
     .menu-link:hover {
         color: var(--txt-color-blue);
+
+    }
+    .menu-link:hover::before {
+        opacity: 1;
+        visibility: visible;
     }
     .submenu-item:hover .submenu-title {
         color: var(--blue);

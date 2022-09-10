@@ -1,0 +1,16 @@
+@import '../components/main-block.css';
+
+.tags-letter {
+    color: var(--dark);
+    line-height: 140.9%;
+    font-weight: 500;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+    .tags-letter {
+        font-size: 1.5rem;
+    }
+
+}
