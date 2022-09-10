@@ -1,4 +1,5 @@
 @import '../components/main-block.css';
+@import '../components/item.css';
 
 .tags-letter {
     color: var(--dark);

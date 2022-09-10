@@ -10,6 +10,7 @@
     margin-right: calc(-1 * var(--gutter-1));
     margin-left: calc(-1 * var(--gutter-1));
 }
+
 @media (min-width: 991.98px) {
     .row-spacing-lg-7 {
         margin-right: calc(-1 * var(--gutter-7));
@@ -22,6 +23,10 @@
     .row-spacing-lg-5 {
         margin-right: calc(-1 * var(--gutter-5));
         margin-left: calc(-1 * var(--gutter-5));
+    }
+    .row-spacing-lg-4 {
+        margin-right: calc(-1 * var(--gutter-4));
+        margin-left: calc(-1 * var(--gutter-4));
     }
 }
 

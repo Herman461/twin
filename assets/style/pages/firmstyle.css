@@ -1,0 +1,33 @@
+@import '../components/item.css';
+
+.firmstyle-item {
+}
+.firmstyle-icon {
+    position: relative;
+    display: flex;
+    width: calc(100% + 1px);
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 136px;
+}
+
+.firmstyle-icon::before {
+    content: "";
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -1;
+    background: var(--blue);
+}
+
+@media (max-width: 576.98px) {
+    .firmstyle-icon {
+        flex: 0 0 90px;
+        padding: 0.625rem;
+    }
+}
