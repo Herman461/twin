@@ -1,0 +1,37 @@
+@import '../components/item.css';
+
+.experts-image {
+    flex: 0 0 136px;
+}
+
+.experts-image img {
+    width: 100%;
+    height: 136px;
+    object-fit: contain;
+}
+
+.partner-image {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 340px;
+}
+
+.partner-image img {
+    width: 100%;
+    height: 340px;
+    object-fit: contain;
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .partner-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .partner-image img {
+        height: 300px;
+    }
+}
