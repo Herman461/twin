@@ -95,6 +95,7 @@
 }
 
 .text-normal {
+    font-size: 1rem;
     line-height: var(--txt-line-height);
 }
 

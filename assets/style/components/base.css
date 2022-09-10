@@ -171,6 +171,12 @@ body {
     flex: 1 1 100%;
 }
 
+@media (min-width: 767.98px) {
+    .flex-fill-lg-0 {
+        flex: 0 0 auto;
+    }
+}
+
 .fancybox__content :focus:not(.carousel__button.is-close) {
     outline: none !important;
 }
@@ -259,7 +265,7 @@ body {
 .list li::before {
     content: "";
     position: absolute;
-    top: 10.5px;
+    top: 9.5px;
     left: 0;
     width: 0.3125rem;
     height: 0.3125rem;

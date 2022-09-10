@@ -1,0 +1,117 @@
+@import '../components/select.css';
+
+.contacts-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 140.9%;
+    color: var(--grey-light);
+}
+
+.contacts-button img {
+    width: 0.6875rem;
+    height: 0.35rem;
+    margin-left: 0.625rem;
+    transition: all var(--transition) var(--transition-timing) 0s;
+}
+
+.contacts-button span {
+    margin-left: 0.3125rem;
+}
+
+.contacts-button.active img {
+    transform: rotate(-180deg);
+}
+
+.contacts-button-big {
+    font-size: 1.4375rem;
+}
+.contacts-button-medium {
+    font-size: 1.1875rem;
+}
+.contacts-button-small {
+    font-weight: 400;
+    font-size: 1.0625rem;
+    color: var(--grey-light);
+}
+.contacts-button-big span {
+    font-size: 1.1875rem;
+}
+.contacts-button-medium span {
+    font-size: 1.0625rem;
+}
+
+.contacts-button-small span {
+    font-size: 0.9375rem;
+}
+.contacts-card {
+    max-width: 420px;
+}
+
+.contacts-card::before {
+    display: none;
+}
+
+.contacts-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.contacts-card-phone {
+    white-space: nowrap;
+}
+
+@media (min-width: 767.98px) {
+    .contacts-map iframe {
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .contacts-map iframe {
+        height: 300px;
+    }
+    .contacts-button-big {
+        font-size: 1.3125rem;
+    }
+    .contacts-button-medium {
+        font-size: 1.0625rem;
+    }
+    .contacts-button-small {
+        font-size: 0.9375rem;
+    }
+    .contacts-list li::before {
+        display: none;
+    }
+    .contacts-list li {
+        padding: 0;
+    }
+    .contacts-card img {
+        width: 83px;
+        height: 83px;
+    }
+    .contacts-button-big span {
+        font-size: 0.875rem;
+    }
+    .contacts-button-medium span {
+        font-size: 0.9375rem;
+    }
+
+    .contacts-button-small span {
+        font-size: 0.8125rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .contacts-map iframe {
+        height: 200px;
+    }
+}
+@media (max-width: 567.98px) {
+    .contacts-map iframe {
+        height: 128px;
+    }
+}
+
