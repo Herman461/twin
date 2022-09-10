@@ -656,41 +656,39 @@ if (document.querySelectorAll('.audio').length > 0) {
 }
 
 function setStyleForBlind() {
-    const value = getCookie('blind-value')
     document.body.classList.add('blind')
-    document.body.style.zoom = value
-    document.documentElement.style.setProperty('--blue', '#333333')
-    document.documentElement.style.setProperty('--white-2', '#222222')
-    document.documentElement.style.setProperty('--white', '#111111')
-    document.documentElement.style.setProperty('--dark', '#ffffff')
-    document.documentElement.style.setProperty('--body-color', '#ffffff')
-    document.documentElement.style.setProperty('--txt-color-blue', '#ffffff')
-    document.documentElement.style.setProperty('--grey-light', '#ffffff')
-    document.documentElement.style.setProperty('--placeholder-color', '#ffffff')
+    document.body.style.zoom = 1.3
+    // document.documentElement.style.setProperty('--white-2', '#222222')
+    // document.documentElement.style.setProperty('--white', '#111111')
+    // document.documentElement.style.setProperty('--dark', '#ffffff')
+    // document.documentElement.style.setProperty('--body-color', '#ffffff')
+    // document.documentElement.style.setProperty('--txt-color-blue', '#ffffff')
+    // document.documentElement.style.setProperty('--grey-light', '#ffffff')
+    // document.documentElement.style.setProperty('--placeholder-color', '#ffffff')
+    document.documentElement.style.setProperty('--blue', '#d9d9d9')
+    document.documentElement.style.setProperty('--txt-color-white', '#000')
 }
 
 function removePropertyForBlind() {
     document.body.classList.remove('blind')
     document.body.style.zoom = 1
-    document.documentElement.style.removeProperty('--body-font-size')
+    document.documentElement.style.removeProperty('--txt-color-white')
     document.documentElement.style.removeProperty('--blue')
-    document.documentElement.style.removeProperty('--white-2')
-    document.documentElement.style.removeProperty('--white')
-    document.documentElement.style.removeProperty('--dark')
-    document.documentElement.style.removeProperty('--body-color')
-    document.documentElement.style.removeProperty('--grey-light')
-    document.documentElement.style.removeProperty('--txt-color-blue')
-    document.documentElement.style.removeProperty('--placeholder-color')
+    // document.documentElement.style.removeProperty('--body-font-size')
+    // document.documentElement.style.removeProperty('--blue')
+    // document.documentElement.style.removeProperty('--white-2')
+    // document.documentElement.style.removeProperty('--white')
+    // document.documentElement.style.removeProperty('--dark')
+    // document.documentElement.style.removeProperty('--body-color')
+    // document.documentElement.style.removeProperty('--grey-light')
+
+    // document.documentElement.style.removeProperty('--placeholder-color')
 }
 
 window.addEventListener('DOMContentLoaded', function() {
 
     if (document.cookie) {
         if (getCookie('is-blind')) {
-            const blindSlider = document.querySelector('#blind-slider')
-            const blindForm = document.querySelector('.blind-form')
-            blindForm.style.display = 'block'
-            blindSlider.value = getCookie('blind-value')
             setStyleForBlind()
         }
     }
@@ -698,24 +696,25 @@ window.addEventListener('DOMContentLoaded', function() {
 
 document.querySelector('#blind').addEventListener('click', function(e) {
     window.scrollTo(0, 0)
-    document.cookie = 'is-blind=1;blind-value=1'
-    document.querySelector('.blind-form').style.display = 'block'
-    setStyleForBlind()
+
+    if (document.body.classList.contains('blind')) {
+        document.cookie = 'is-blind=1;max-age=-1'
+        removePropertyForBlind()
+    } else {
+        document.cookie = 'is-blind=1;blind-value=1'
+        setStyleForBlind()
+    }
     e.preventDefault()
 })
 
-document.querySelector('#blind-logout').addEventListener('click', function(e) {
-    document.cookie = 'is-blind=1;max-age=-1'
-    document.querySelector('.blind-form').style.display = 'none'
-    removePropertyForBlind()
+// document.querySelector('#blind-logout').addEventListener('click', function(e) {
+//     document.cookie = 'is-blind=1;max-age=-1'
+//     document.querySelector('.blind-form').style.display = 'none'
+//     removePropertyForBlind()
+//
+//     e.preventDefault()
+// })
 
-    e.preventDefault()
-})
-
-document.querySelector('#blind-slider').addEventListener('input', function(e) {
-    document.body.style.zoom = e.target.value
-    document.cookie = 'blind-value=' + e.target.value
-})
 
 
 if (document.querySelector('#copyToClipBoardBtn')) {

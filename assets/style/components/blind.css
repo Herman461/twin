@@ -1,6 +1,6 @@
-body.blind {
-    background: #111111;
-}
+/*body.blind {*/
+/*    background: #111111;*/
+/*}*/
 
 
 body.blind img {
@@ -21,6 +21,21 @@ body.blind .share-label {
 body.blind .share-btn {
     filter: grayscale(100%);
 }
+
+body.blind .submenu-tag {
+    color: var(--black);
+}
+body.blind  .btn-default {
+    color: var(--black);
+}
+body.blind  .btn-small{
+    color: var(--black);
+}
+
+body.blind .intro-pagination .swiper-pagination-bullet {
+    background: var(--black);
+}
+
 .blind-form input {
     width: 300px;
 }

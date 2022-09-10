@@ -76,12 +76,6 @@
     .info-item:hover .info-title {
         color: var(--blue)
     }
-    .info-item:hover .info-date {
-        color: var(--blue)
-    }
-    .info-item:hover .circle::after {
-        background: var(--blue) !important;
-    }
 }
 
 @media (max-width: 640px) {
