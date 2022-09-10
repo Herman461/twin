@@ -1,0 +1,33 @@
+.error {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.error-number {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 131%;
+    color: var(--dark);
+}
+
+@media (max-width: 767.98px) {
+    .error {
+        text-align: center;
+    }
+    .error-number {
+        font-size: 4.0625rem;
+    }
+    .error .list li::before {
+        display: none;
+    }
+    .error .input {
+        margin: 0 auto;
+    }
+    .error-image {
+        width: 191px;
+        height: 191px;
+    }
+}

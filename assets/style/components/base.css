@@ -281,6 +281,9 @@ ol {
     width: 100%;
     height: 2.5rem;
 }
+.input-limited {
+    max-width: 380px;
+}
 .input {
     position: relative;
     padding: 0 0.9375rem;
@@ -322,6 +325,33 @@ ol {
     transition: all var(--transition) var(--transition-timing) 0s;
 }
 
+
+.cookie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cookie-body {
+    position: relative;
+}
+
+.cookie-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 991.98px) {
+    .cookie-text br {
+        display: none;
+    }
+}
 
 @media (max-width: 640px) {
     .date-bottom {
