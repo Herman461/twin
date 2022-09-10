@@ -30,4 +30,7 @@
         width: 191px;
         height: 191px;
     }
+    .error .list li {
+        padding: 0 !important;
+    }
 }
