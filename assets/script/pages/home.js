@@ -5,7 +5,7 @@ const introSlider = new Swiper('.intro-slider', {
     // autoplay: {
     //     delay: 2000,
     // },
-    autoHeight: true,
+    // autoHeight: true,
     pagination: {
         el: ".intro-pagination",
         clickable: true,

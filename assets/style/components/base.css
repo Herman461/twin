@@ -174,6 +174,7 @@ ol {
     flex: 1 1 100%;
 }
 
+
 @media (min-width: 767.98px) {
     .flex-fill-lg-0 {
         flex: 0 0 auto;
@@ -354,6 +355,13 @@ ol {
     }
 }
 
+@media (min-width: 991.98px) {
+    .side {
+        position: fixed;
+        width: auto;
+    }
+}
+
 @media (max-width: 640px) {
     .date-bottom {
         display: flex !important;
@@ -373,5 +381,13 @@ ol {
     }
     .list li::before {
         top: 6.5px;
+    }
+}
+
+@media (any-hover: hover) {
+    a:hover .tag {
+        background: var(--white-2);
+        color: var(--grey);
+        font-size: var(--txt-ultra-small);
     }
 }

@@ -18,6 +18,11 @@
 .menu {
     flex: 1 1 auto;
 }
+@media (min-width: 1399.98px) {
+    .header-btn {
+        margin-right: 15px;
+    }
+}
 
 
 
@@ -63,8 +68,27 @@
 }
 .header-search {
     margin-right: 49px;
+    cursor: pointer;
 }
 
+.header-search__body {
+    min-height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition) var(--transition-timing) 0s;
+    z-index: 50;
+}
+
+.header-search__body.active {
+    opacity: 1;
+    visibility: visible;
+}
 
 .header-btn {
 
@@ -89,9 +113,10 @@
     color: var(--txt-color-blue);
 }
 
-.submenu-content {
-}
 
+.submenu-item p {
+    transition: all var(--transition) var(--transition-timing) 0s;
+}
 
 
 .submenu-image img {
@@ -136,11 +161,27 @@
     margin-bottom: 0;
 }
 
+.submenu-button::before {
+    content: "";
+    border-radius: 5px;
+    background: var(--white-2);
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
+    transition: all var(--transition) var(--transition-timing) 0s;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.submenu-button {
+    position: relative;
+}
+
 
 @media (min-width: 1100.98px) {
-    .header-btn {
-        margin-right: 15px;
-    }
+
     .menu-list {
         display: flex;
         align-items: center;
@@ -178,8 +219,13 @@
     .submenu-big {
         transform: translate(-50%, -15px);
         max-width: 875px;
-        padding: 3.125rem 2.8125rem !important;
+        padding: 0.9375rem 2.8125rem 3.125rem !important;
         width: 100%;
+
+    }
+    .submenu .row {
+        min-height: 220px;
+        align-items: center;
     }
     .submenu.active {
         opacity: 1;
@@ -188,6 +234,7 @@
     .submenu-button {
         white-space: nowrap;
         margin-right: 20px;
+        transition: all 0.3s ease 0s;
     }
 
     .submenu-button:last-child {
@@ -209,6 +256,9 @@
         color: var(--txt-color-blue);
 
     }
+    .submenu-list:hover {
+
+    }
     .menu-link:hover::before {
         opacity: 1;
         visibility: visible;
@@ -216,9 +266,27 @@
     .submenu-item:hover .submenu-title {
         color: var(--blue);
     }
+    .submenu-item:hover .submenu-title {
+        color: var(--blue);
+    }
+    .submenu-item:hover p {
+        color: var(--blue);
+    }
+    .submenu-button:hover {
+        color: var(--txt-color-blue);
+    }
+    .submenu-button:hover::before {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 @media (max-width: 1100.98px) {
+    .header-search {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: flex-end;
+    }
     .icon-search {
         display: none !important;
     }

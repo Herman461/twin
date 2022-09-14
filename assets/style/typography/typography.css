@@ -10,6 +10,11 @@
     font-weight: 500;
     line-height: 140.9%;
     font-size: 1.125rem;
+    transition: all 0.3s ease 0s;
+}
+
+.text {
+    transition: all 0.3s ease 0s;
 }
 
 .text-large {
@@ -130,6 +135,12 @@ b {
     }
     .blue-hover:hover {
         color: var(--txt-color-blue) !important;
+    }
+    a:hover .title-small {
+        color: var(--txt-color-blue)
+    }
+    a:hover .text {
+        color: var(--txt-color-blue)
     }
 }
 

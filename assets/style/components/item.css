@@ -9,6 +9,7 @@
 .item-text {
     font-size: var(--txt-medium);
     line-height: var(--txt-line-height);
+    transition: all var(--transition) var(--transition-timing) 0s;
 }
 
 .item-label {
@@ -38,5 +39,11 @@
 @media (max-width: 576px) {
     .item-image-big {
         margin: 0 auto;
+    }
+}
+
+@media (any-hover: hover) {
+    a:hover .item-text {
+        color: var(--txt-color-blue);
     }
 }
