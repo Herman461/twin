@@ -220,6 +220,12 @@ tabLinks.forEach(function(el) {
     el.addEventListener("mouseenter", openTabs);
 });
 
+if (document.querySelector('.paging') && document.querySelector('.side')) {
+    const paging = document.querySelector('.paging')
+    const side = document.querySelector('.side')
+    const pagingHeight = paging.offsetHeight
+    side.style.paddingBottom = 'calc(3.125rem + ' + pagingHeight + 'px)'
+}
 
 function openTabs(el) {
     const btnTarget = el.currentTarget;
