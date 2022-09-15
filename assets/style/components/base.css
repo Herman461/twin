@@ -374,6 +374,7 @@ ol {
         position: sticky;
         top: 1rem;
         width: auto;
+        padding-bottom: var(--gutter-10);
         /*padding-bottom: 4.625rem;*/
     }
 }
