@@ -363,6 +363,9 @@ ol {
     .cookie-text br {
         display: none;
     }
+    .side {
+        width: 100% !important;
+    }
 }
 
 @media (min-width: 991.98px) {
