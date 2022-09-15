@@ -22,6 +22,15 @@
     position: relative;
 }
 
+.info-image-brand {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-image-brand img {
+    position: static;
+}
 .info-item-big .info-image {
     flex: 0 0 218px !important;
 }

@@ -10,17 +10,17 @@
     font-weight: 500;
     line-height: 140.9%;
     font-size: 1.125rem;
-    transition: all 0.3s ease 0s;
+    transition: all var(--transition) var(--transition-timing) 0s;
 }
 
 .text {
-    transition: all 0.3s ease 0s;
+    transition: all var(--transition) var(--transition-timing) 0s;
 }
 
 .text-large {
     font-size: var(--txt-large);
     line-height: calc(26 / 18 * 100%);
-    color: var(--dark);
+    transition: all var(--transition) var(--transition-timing) 0s;
 }
 
 .text-extra-large {
@@ -102,6 +102,7 @@
 .text-normal {
     font-size: 1rem;
     line-height: var(--txt-line-height);
+    transition: all var(--transition) var(--transition-timing) 0s;
 }
 
 .text-black {
@@ -140,6 +141,12 @@ b {
         color: var(--txt-color-blue)
     }
     a:hover .text {
+        color: var(--txt-color-blue)
+    }
+    a:hover .text-large {
+        color: var(--txt-color-blue)
+    }
+    a:hover .text-normal {
         color: var(--txt-color-blue)
     }
 }

@@ -19,6 +19,7 @@
 .client-cases-text {
     font-size: var(--txt-medium);
     line-height: var(--txt-line-height);
+    transition: all var(--transition) var(--transition-timing) 0s;
 }
 .client-cases .swiper-slide {
     height: auto;
@@ -27,6 +28,12 @@
 @media (max-width: 767.98px) {
     .client-cases-brand {
         margin-bottom: 1.6875rem;
+    }
+}
+
+@media (any-hover: hover) {
+    a:hover .client-cases-text {
+        color: var(--txt-color-blue);
     }
 }
 

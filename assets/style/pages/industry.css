@@ -1,0 +1,62 @@
+@import '../components/item.css';
+@import '../components/info.css';
+@import '../plugins/audio-player.min.css';
+@import '../components/audio.css';
+@import '../plugins/fancybox.css';
+
+.spoiler {
+    cursor: pointer;
+    transition: all var(--transition) var(--transition-timing) 0s;
+}
+.spoiler .spoiler-up-arrow {
+    display: none;
+}
+.spoiler.active .spoiler-down-arrow {
+    display: none;
+}
+.spoiler.active {
+    background: var(--blue) !important;
+}
+
+.spoiler.active .spoiler-up-arrow {
+    display: block;
+}
+
+.spoiler.active span {
+    color: var(--white) !important;
+}
+
+.spoiler img {
+    width: 18px;
+    height: 8px;
+}
+
+.industry-image {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 340px;
+}
+
+.industry-image img {
+    width: 100%;
+    height: 340px;
+    object-fit: contain;
+}
+.industry-file img {
+    width: 42px;
+    height: 57px;
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .industry-image {
+        max-width: 80%;
+    }
+}
+@media (max-width: 991.98px) {
+    .industry-file img {
+        width: 33px;
+        height: 45px;
+    }
+}
