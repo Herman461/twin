@@ -67,11 +67,13 @@ ol {
     padding-left: 1.0625rem;
 }
 
-
-
-.page {
-    overflow-x: hidden !important;
+.border-bottom-grey {
+    border-bottom: 1px solid var(--grey-extra-light);
 }
+
+/*.page {*/
+/*    overflow-x: hidden !important;*/
+/*}*/
 
 *::selection {
     background: var(--blue);
@@ -328,12 +330,20 @@ ol {
 
 
 .cookie {
+    transition: all var(--transition) var(--transition-timing) 0s;
     position: fixed;
     bottom: 0;
-    left: 0;
+    visibility: hidden;
+    opacity: 0;
     width: 100%;
     height: auto;
+    background: var(--white);
     box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cookie.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 .cookie-body {
@@ -357,7 +367,8 @@ ol {
 
 @media (min-width: 991.98px) {
     .side {
-        position: fixed;
+        position: sticky;
+        top: 0;
         width: auto;
     }
 }
