@@ -8,6 +8,9 @@
     font-size: 1.75rem;
     text-transform: uppercase;
 }
+.tags .tag {
+    font-size: var(--txt-medium);
+}
 
 @media (max-width: 767.98px) {
     .tags-letter {
