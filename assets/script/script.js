@@ -819,6 +819,7 @@ if (cookieCloseButton) {
 }
 
 if (document.querySelector('.side')) {
+    let offset = 0;
     window.addEventListener('scroll', function(e) {
         const side = document.querySelector('.side')
         // const sideTop = side.getBoundingClientRect().top
@@ -829,11 +830,12 @@ if (document.querySelector('.side')) {
         //     side.classList.remove('fixed')
         //     // return
         // }
-        if (document.documentElement.scrollTop > sideOffset) {
+
+        if (document.documentElement.scrollTop < offset) {
             side.style.top = '0'
         } else {
             side.style.top = '-100%'
         }
-
+        offset = document.documentElement.scrollTop
     })
 }
