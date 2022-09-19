@@ -359,6 +359,9 @@ ol {
     cursor: pointer;
 }
 
+.position-relative {
+    position: relative;
+}
 @media (max-width: 991.98px) {
     .cookie-text br {
         display: none;
@@ -372,10 +375,15 @@ ol {
 @media (min-width: 991.98px) {
     .side {
         position: sticky;
-        top: 1rem;
+        /*position: sticky;*/
+        /*top: 1rem;*/
         width: auto;
         padding-bottom: var(--gutter-10);
         /*padding-bottom: 4.625rem;*/
+    }
+    .side.fixed {
+
+
     }
 }
 

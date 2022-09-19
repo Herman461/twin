@@ -817,3 +817,23 @@ if (cookieCloseButton) {
         document.querySelector('.cookie').classList.remove('active')
     })
 }
+
+if (document.querySelector('.side')) {
+    window.addEventListener('scroll', function(e) {
+        const side = document.querySelector('.side')
+        // const sideTop = side.getBoundingClientRect().top
+        const sideOffset = side.scrollHeight
+        const sideTop = document.querySelector('.page').scrollHeight - sideOffset
+        // console.log(sideTop)
+        // if (side.classList.contains('fixed') && sideTop < document.documentElement.scrollTop) {
+        //     side.classList.remove('fixed')
+        //     // return
+        // }
+        if (document.documentElement.scrollTop > sideOffset) {
+            side.style.top = '0'
+        } else {
+            side.style.top = '-100%'
+        }
+
+    })
+}
