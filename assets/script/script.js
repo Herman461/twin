@@ -818,24 +818,29 @@ if (cookieCloseButton) {
     })
 }
 
-if (document.querySelector('.side')) {
-    let offset = 0;
-    window.addEventListener('scroll', function(e) {
-        const side = document.querySelector('.side')
-        // const sideTop = side.getBoundingClientRect().top
-        const sideOffset = side.scrollHeight
-        const sideTop = document.querySelector('.page').scrollHeight - sideOffset
-        // console.log(sideTop)
-        // if (side.classList.contains('fixed') && sideTop < document.documentElement.scrollTop) {
-        //     side.classList.remove('fixed')
-        //     // return
-        // }
+// if (document.querySelector('.side')) {
+//     let offset = 0;
+//     window.addEventListener('scroll', function(e) {
+//         const side = document.querySelector('.side')
+//         // const sideTop = side.getBoundingClientRect().top
+//         const sideOffset = side.scrollHeight
+//         const sideTop = document.querySelector('.page').scrollHeight - sideOffset
+//         // console.log(sideTop)
+//         // if (side.classList.contains('fixed') && sideTop < document.documentElement.scrollTop) {
+//         //     side.classList.remove('fixed')
+//         //     // return
+//         // }
+//
+//         if (document.documentElement.scrollTop < offset) {
+//             side.style.top = '0'
+//         } else {
+//             side.style.top = '-100%'
+//         }
+//         offset = document.documentElement.scrollTop
+//     })
+// }
 
-        if (document.documentElement.scrollTop < offset) {
-            side.style.top = '0'
-        } else {
-            side.style.top = '-100%'
-        }
-        offset = document.documentElement.scrollTop
-    })
+
+if (document.querySelector('.side')) {
+    sidebar = new StickySidebar('.side', {topSpacing: 20, bottomSpacing: 20});
 }

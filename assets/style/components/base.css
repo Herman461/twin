@@ -378,8 +378,11 @@ ol {
         /*position: sticky;*/
         /*top: 1rem;*/
         width: auto;
-        padding-bottom: var(--gutter-10);
+        /*transform: translate(0, -3rem);*/
         /*padding-bottom: 4.625rem;*/
+    }
+    .side.side-offset .inner-wrapper-sticky {
+        padding-bottom: calc(3.125rem + 1.5rem);
     }
     .side.fixed {
 
