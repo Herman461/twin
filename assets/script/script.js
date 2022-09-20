@@ -840,7 +840,7 @@ if (cookieCloseButton) {
 //     })
 // }
 
-if (window.matchMedia('(min-width: 991.98px)')) {
+if (window.matchMedia('(min-width: 991.98px)') && document.querySelector('.side')) {
     let sidebar
     let pageHeight = document.querySelector('.page').offsetHeight
     if (document.querySelector('.side')) {
