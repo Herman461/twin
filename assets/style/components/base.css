@@ -381,7 +381,7 @@ ol {
         /*transform: translate(0, -3rem);*/
         /*padding-bottom: 4.625rem;*/
     }
-    .side-body {
+    .side.side-offset .side-body {
         padding-bottom: calc(3.125rem + 2.5rem);
     }
     .side.fixed {
