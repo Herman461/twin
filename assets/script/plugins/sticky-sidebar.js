@@ -527,6 +527,7 @@ const StickySidebar = (() => {
               // When browser is scrolling and re-calculate just dimensions
               // within scroll.
               case 'scroll':
+
                 this._calcDimensionsWithScroll();
                 this.observeScrollDir();
                 this.stickyPosition();

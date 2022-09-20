@@ -840,7 +840,20 @@ if (cookieCloseButton) {
 //     })
 // }
 
+if (window.matchMedia('(min-width: 991.98px)')) {
+    let sidebar
+    let pageHeight = document.querySelector('.page').offsetHeight
+    if (document.querySelector('.side')) {
+        sidebar = new StickySidebar('.side', {topSpacing: 20, bottomSpacing: 20});
+    }
 
-if (document.querySelector('.side')) {
-    sidebar = new StickySidebar('.side', {topSpacing: 20, bottomSpacing: 20});
+    window.addEventListener('scroll', function(e) {
+        console.log(document.querySelector('.page').offsetHeight)
+        if (pageHeight !== document.querySelector('.page').offsetHeight) {
+            pageHeight = document.querySelector('.page').offsetHeight
+            sidebar = new StickySidebar('.side', {topSpacing: 20, bottomSpacing: 20});
+        }
+
+    })
+
 }
