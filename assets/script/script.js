@@ -530,12 +530,27 @@ if (menuLinks.length > 0) {
                 if (isActive) {
                     e.stopPropagation()
                 }
-
             }
             // const submenu = link.nextElementSibling
             // submenu.classList.add('active')
             // link.classList.add('active')
         }, true)
+
+        link.addEventListener('click', function(e) {
+            if (window.matchMedia("(min-width: 991.98px) and (max-width: 1100.98px)").matches) {
+                if (!link.classList.contains('active')) {
+                    e.preventDefault()
+                    if (document.querySelector('.submenu.active')) {
+                        document.querySelector('.submenu.active').classList.remove('active')
+                        document.querySelector('.menu-link.active').classList.remove('active')
+                    }
+                    const submenu = link.nextElementSibling
+                    submenu.classList.add('active')
+                    link.classList.add('active')
+                }
+
+            }
+        })
     }
 }
 
@@ -543,6 +558,13 @@ if (menuLinks.length > 0) {
 window.addEventListener('mousemove', function(e) {
     if (!window.matchMedia("(min-width: 1100.98px)").matches) return
     if (document.querySelector('.submenu.active') && !e.target.closest('.header')) {
+        document.querySelector('.submenu.active').classList.remove('active')
+        document.querySelector('.menu-link.active').classList.remove('active')
+    }
+})
+
+window.addEventListener('click', function(e) {
+    if (document.querySelector('.submenu.active') && !e.target.closest('.menu-link')) {
         document.querySelector('.submenu.active').classList.remove('active')
         document.querySelector('.menu-link.active').classList.remove('active')
     }
