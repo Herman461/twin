@@ -512,6 +512,7 @@ if (menuLinks.length > 0) {
 
         link.addEventListener('mouseenter', function() {
             if (!window.matchMedia("(min-width: 1100.98px)").matches) return
+
             if (document.querySelector('.submenu.active')) {
                 const activeSubmenu = document.querySelector('.submenu.active')
                 activeSubmenu.classList.remove('active')
@@ -523,11 +524,18 @@ if (menuLinks.length > 0) {
             link.classList.add('active')
         })
         link.addEventListener('click', function(e) {
-            e.preventDefault()
-            const submenu = link.nextElementSibling
-            submenu.classList.add('active')
-            link.classList.add('active')
-        })
+            if (window.matchMedia("(max-width: 1100.98px)").matches) {
+                const isActive = link.classList.contains('active')
+                console.log(isActive)
+                if (isActive) {
+                    e.stopPropagation()
+                }
+
+            }
+            // const submenu = link.nextElementSibling
+            // submenu.classList.add('active')
+            // link.classList.add('active')
+        }, true)
     }
 }
 
