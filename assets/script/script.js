@@ -502,7 +502,7 @@ window.addEventListener('click', function(e) {
 
 
 
-const menuLinks = document.querySelectorAll('.menu-link')
+const menuLinks = document.querySelectorAll('.menu-action')
 
 if (menuLinks.length > 0) {
     for (let index = 0; index < menuLinks.length; index++) {
@@ -542,7 +542,7 @@ if (menuLinks.length > 0) {
                     e.preventDefault()
                     if (document.querySelector('.submenu.active')) {
                         document.querySelector('.submenu.active').classList.remove('active')
-                        document.querySelector('.menu-link.active').classList.remove('active')
+                        document.querySelector('.menu-action.active').classList.remove('active')
                     }
                     const submenu = link.nextElementSibling
                     submenu.classList.add('active')
@@ -559,14 +559,14 @@ window.addEventListener('mousemove', function(e) {
     if (!window.matchMedia("(min-width: 1100.98px)").matches) return
     if (document.querySelector('.submenu.active') && !e.target.closest('.header')) {
         document.querySelector('.submenu.active').classList.remove('active')
-        document.querySelector('.menu-link.active').classList.remove('active')
+        document.querySelector('.menu-action.active').classList.remove('active')
     }
 })
 
 window.addEventListener('click', function(e) {
-    if (document.querySelector('.submenu.active') && !e.target.closest('.menu-link')) {
+    if (document.querySelector('.submenu.active') && !e.target.closest('.menu-item').querySelector('.menu-action.active')) {
         document.querySelector('.submenu.active').classList.remove('active')
-        document.querySelector('.menu-link.active').classList.remove('active')
+        document.querySelector('.menu-action.active').classList.remove('active')
     }
 })
 
