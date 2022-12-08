@@ -502,34 +502,42 @@ window.addEventListener('click', function(e) {
 
 
 
-const menuLinks = document.querySelectorAll('.menu-action')
+const menuLinks = document.querySelectorAll('.menu-link')
 
 if (menuLinks.length > 0) {
     for (let index = 0; index < menuLinks.length; index++) {
         const link = menuLinks[index]
+        const submenu = link.parentElement.nextElementSibling
 
-        if (!link.nextElementSibling || !link.nextElementSibling.classList.contains('submenu')) continue
+        if (!submenu || !submenu.classList.contains('submenu')) continue
 
-        link.addEventListener('mouseenter', function() {
+        link.addEventListener('mouseenter', function(e) {
             if (!window.matchMedia("(min-width: 1100.98px)").matches) return
 
             if (document.querySelector('.submenu.active')) {
                 const activeSubmenu = document.querySelector('.submenu.active')
                 activeSubmenu.classList.remove('active')
-                activeSubmenu.classList.remove('active')
+
                 activeSubmenu.previousElementSibling.classList.remove('active')
             }
-            const submenu = link.nextElementSibling
+            const submenu = link.parentElement.nextElementSibling
             submenu.classList.add('active')
-            link.classList.add('active')
+            const action = e.target.closest('.menu-item').querySelector('.menu-action')
+            action.classList.add('active')
+            link.parentElement.classList.add('active')
         })
         link.addEventListener('click', function(e) {
             if (window.matchMedia("(max-width: 1100.98px)").matches) {
                 const isActive = link.classList.contains('active')
-                console.log(isActive)
+                if (e.target.closest('.menu-link')) {
+                    e.stopPropagation()
+                }
                 if (isActive) {
                     e.stopPropagation()
                 }
+                // if (e.target.closest('.menu-link')) {
+                //     e.preventDefault()
+                // }
             }
             // const submenu = link.nextElementSibling
             // submenu.classList.add('active')
@@ -537,9 +545,10 @@ if (menuLinks.length > 0) {
         }, true)
 
         link.addEventListener('click', function(e) {
+
             if (window.matchMedia("(min-width: 991.98px) and (max-width: 1100.98px)").matches) {
                 if (!link.classList.contains('active')) {
-                    e.preventDefault()
+                    // e.preventDefault()
                     if (document.querySelector('.submenu.active')) {
                         document.querySelector('.submenu.active').classList.remove('active')
                         document.querySelector('.menu-action.active').classList.remove('active')
@@ -559,14 +568,30 @@ window.addEventListener('mousemove', function(e) {
     if (!window.matchMedia("(min-width: 1100.98px)").matches) return
     if (document.querySelector('.submenu.active') && !e.target.closest('.header')) {
         document.querySelector('.submenu.active').classList.remove('active')
+        if (document.querySelector('.menu-item.active')) {
+            document.querySelector('.menu-item.active').classList.remove('active')
+        }
         document.querySelector('.menu-action.active').classList.remove('active')
+
     }
 })
 
+// window.addEventListener('click', function(e) {
+//     if (document.querySelector('.submenu.active') && !e.target.closest('.menu-item').querySelector('.menu-action.active')) {
+//         document.querySelector('.submenu.active').classList.remove('active')
+//         document.querySelector('.menu-action.active').classList.remove('active')
+//     }
+// })
+
 window.addEventListener('click', function(e) {
-    if (document.querySelector('.submenu.active') && !e.target.closest('.menu-item').querySelector('.menu-action.active')) {
-        document.querySelector('.submenu.active').classList.remove('active')
-        document.querySelector('.menu-action.active').classList.remove('active')
+    if (e.target.closest('.menu-arrow')) {
+        const wrapper = e.target.closest('.menu-item')
+        const submenu = wrapper.querySelector('.submenu')
+        const action = wrapper.querySelector('.menu-action')
+        wrapper.classList.toggle('active')
+        submenu.classList.toggle('active')
+        action.classList.toggle('active')
+
     }
 })
 
