@@ -567,7 +567,7 @@ if (menuActions.length > 0) {
 
 window.addEventListener('mousemove', function(e) {
     if (!window.matchMedia("(min-width: 1100.98px)").matches) return
-    if (document.querySelector('.submenu.active') && !e.target.closest('.header')) {
+    if ((document.querySelector('.submenu.active') && !e.target.closest('.header')) || e.target.closest('.header-search')) {
         document.querySelector('.submenu.active').classList.remove('active')
         if (document.querySelector('.menu-item.active')) {
             document.querySelector('.menu-item.active').classList.remove('active')
