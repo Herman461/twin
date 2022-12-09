@@ -458,7 +458,7 @@ for (let index = 0; index < select.length; ++index) {
         }
     })
     selectList.addEventListener('click', function(e) {
-        if (e.target.closest('.select__item')) {
+        if (!document.querySelector('.select__list.slide') && e.target.closest('.select__item')) {
             const target = e.target.closest('.select__item')
             const value = target.dataset.value
             let newSelectedEl = item.querySelector(`option[value="${value}"]`)
