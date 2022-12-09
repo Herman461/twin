@@ -69,6 +69,10 @@
 .menu-action.active .menu-arrow img {
     transform: rotate(-180deg);
 }
+.menu-item.active .menu-arrow img {
+    transform: rotate(-180deg);
+}
+
 .header-search {
     margin-right: 49px;
     cursor: pointer;

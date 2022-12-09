@@ -502,16 +502,17 @@ window.addEventListener('click', function(e) {
 
 
 
-const menuLinks = document.querySelectorAll('.menu-link')
+const menuActions = document.querySelectorAll('.menu-action')
 
-if (menuLinks.length > 0) {
-    for (let index = 0; index < menuLinks.length; index++) {
-        const link = menuLinks[index]
+if (menuActions.length > 0) {
+    for (let index = 0; index < menuActions.length; index++) {
+        const action = menuActions[index]
+        const link = action.querySelector('.menu-link')
         const submenu = link.parentElement.nextElementSibling
 
         if (!submenu || !submenu.classList.contains('submenu')) continue
 
-        link.addEventListener('mouseenter', function(e) {
+        action.addEventListener('mouseenter', function(e) {
             if (!window.matchMedia("(min-width: 1100.98px)").matches) return
 
             if (document.querySelector('.submenu.active')) {
@@ -526,7 +527,7 @@ if (menuLinks.length > 0) {
             action.classList.add('active')
             link.parentElement.classList.add('active')
         })
-        link.addEventListener('click', function(e) {
+        action.addEventListener('click', function(e) {
             if (window.matchMedia("(max-width: 1100.98px)").matches) {
                 const isActive = link.classList.contains('active')
                 if (e.target.closest('.menu-link')) {
@@ -583,17 +584,17 @@ window.addEventListener('mousemove', function(e) {
 //     }
 // })
 
-window.addEventListener('click', function(e) {
-    if (e.target.closest('.menu-arrow')) {
-        const wrapper = e.target.closest('.menu-item')
-        const submenu = wrapper.querySelector('.submenu')
-        const action = wrapper.querySelector('.menu-action')
-        wrapper.classList.toggle('active')
-        submenu.classList.toggle('active')
-        action.classList.toggle('active')
-
-    }
-})
+// window.addEventListener('click', function(e) {
+//     if (e.target.closest('.menu-arrow')) {
+//         const wrapper = e.target.closest('.menu-item')
+//         const submenu = wrapper.querySelector('.submenu')
+//         const action = wrapper.querySelector('.menu-action')
+//         wrapper.classList.toggle('active')
+//         submenu.classList.toggle('active')
+//         action.classList.toggle('active')
+//
+//     }
+// })
 
 
 const iconMenu = document.querySelector('.icon-menu')
