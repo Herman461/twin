@@ -3,13 +3,13 @@
 /*}*/
 
 
-body.blind img {
+/*body.blind img {
     filter: grayscale(100%);
 }
 body.blind *::before,
 body.blind *::after {
     filter: grayscale(100%);
-}
+}*/
 
 .blind-form {
     display: none;
@@ -18,9 +18,11 @@ body.blind *::after {
 body.blind .share-label {
     color: #fff !important;
 }
+/*
 body.blind .share-btn {
     filter: grayscale(100%);
 }
+*/
 
 body.blind .submenu-tag {
     color: var(--black);

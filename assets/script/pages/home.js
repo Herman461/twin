@@ -1,7 +1,8 @@
 const introSlider = new Swiper('.intro-slider', {
     speed: 1000,
     loop: true,
-    spaceBetween: 40,
+    spaceBetween: 50,
+    centerMode: true,
     // autoplay: {
     //     delay: 2000,
     // },

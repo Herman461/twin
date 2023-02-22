@@ -513,7 +513,7 @@ if (menuActions.length > 0) {
         if (!submenu || !submenu.classList.contains('submenu')) continue
 
         action.addEventListener('mouseenter', function(e) {
-            if (!window.matchMedia("(min-width: 1100.98px)").matches) return
+            if (!window.matchMedia("(min-width: 991.98px)").matches) return
 
             if (document.querySelector('.submenu.active')) {
                 const activeSubmenu = document.querySelector('.submenu.active')
@@ -528,7 +528,7 @@ if (menuActions.length > 0) {
             link.parentElement.classList.add('active')
         })
         action.addEventListener('click', function(e) {
-            if (window.matchMedia("(max-width: 1100.98px)").matches) {
+            if (window.matchMedia("(max-width: 991.98px)").matches) {
                 const isActive = link.classList.contains('active')
                 if (e.target.closest('.menu-link')) {
                     e.stopPropagation()
@@ -566,8 +566,13 @@ if (menuActions.length > 0) {
 
 
 window.addEventListener('mousemove', function(e) {
-    if (!window.matchMedia("(min-width: 1100.98px)").matches) return
-    if ((document.querySelector('.submenu.active') && !e.target.closest('.header')) || e.target.closest('.header-search')) {
+    if (!window.matchMedia("(min-width: 991.98px)").matches) return
+    if (
+        (document.querySelector('.submenu.active') && !e.target.closest('.header'))
+        || e.target.closest('.header-search')
+        || (e.target.closest('.menu-action') && !e.target.closest('.menu-action').classList.contains('active'))
+    ) {
+        if (!document.querySelector('.submenu.active')) return
         document.querySelector('.submenu.active').classList.remove('active')
         if (document.querySelector('.menu-item.active')) {
             document.querySelector('.menu-item.active').classList.remove('active')
@@ -719,7 +724,7 @@ if (document.querySelectorAll('.audio').length > 0) {
 
 function setStyleForBlind() {
     document.body.classList.add('blind')
-    document.body.style.zoom = 1.3
+/*    document.body.style.zoom = 1.3*/
     // document.documentElement.style.setProperty('--white-2', '#222222')
     // document.documentElement.style.setProperty('--white', '#111111')
     // document.documentElement.style.setProperty('--dark', '#ffffff')
@@ -766,6 +771,10 @@ if (document.querySelector('#blind')) {
             document.cookie = 'is-blind=1;blind-value=1'
             setStyleForBlind()
         }
+/*        setTimeout(() => {
+            sidebar.destroy()
+            sidebar = new StickySidebar('.sidebar', {topSpacing: 20, bottomSpacing: 20});
+        }, 1000)*/
         e.preventDefault()
     })
 }
@@ -895,21 +904,43 @@ if (cookieCloseButton) {
 //         offset = document.documentElement.scrollTop
 //     })
 // }
+let sidebar = new StickySidebar('.sidebar', {topSpacing: 20, bottomSpacing: 20});
 
+// setInterval(() => {
+//     sidebar.updateSticky()
+// }, 2000)
+/*
 if (window.matchMedia('(min-width: 991.98px)') && document.querySelector('.side')) {
-    let sidebar
+
     let pageHeight = document.querySelector('.page').offsetHeight
+
     if (document.querySelector('.side')) {
-        sidebar = new StickySidebar('.side', {topSpacing: 20, bottomSpacing: 20});
+
+        const mainContent = document.querySelector('.main-content');
+        const side = document.querySelector('.side');
+
+        if (side.offsetHeight < mainContent.offsetHeight) {
+            sidebar = new StickySidebar('.side', {topSpacing: 20, bottomSpacing: 20});
+        }
+
     }
 
     window.addEventListener('scroll', function(e) {
-        console.log(document.querySelector('.page').offsetHeight)
+
         if (pageHeight !== document.querySelector('.page').offsetHeight) {
+
             pageHeight = document.querySelector('.page').offsetHeight
-            sidebar = new StickySidebar('.side', {topSpacing: 20, bottomSpacing: 20});
+
+            const mainContent = document.querySelector('.main-content');
+            const side = document.querySelector('.side');
+
+            if (side.offsetHeight < mainContent.offsetHeight) {
+                sidebar = new StickySidebar('.side', {topSpacing: 20, bottomSpacing: 20});
+            }
+
         }
 
     })
 
 }
+*/
