@@ -150,6 +150,9 @@
 }
 
 @media (max-width: 767.98px) {
+    .base-partners-cases .base-partner-audios {
+        margin: calc(-1 * var(--gutter-x));
+    }
     .base-partners-cases-brand img {
         max-width: 175px;
     }
@@ -253,9 +256,7 @@
     }
 }
 
-.swiper-button-disabled {
-    background: var(--grey);
-}
+
 .spoiler {
     cursor: pointer;
     transition: all var(--transition) var(--transition-timing) 0s;
@@ -281,4 +282,11 @@
 .spoiler img {
     width: 18px;
     height: 8px;
+}
+
+@media (min-width: 767.98px) {
+    .base-partner-slider .swiper-slide-duplicate {
+        display: none !important;
+    }
+
 }
