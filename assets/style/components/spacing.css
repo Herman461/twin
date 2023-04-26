@@ -40,7 +40,10 @@
         margin-right: calc(-1 * var(--gutter-7));
         margin-left: calc(-1 * var(--gutter-7));
     }
-
+    .row-spacing-md-5 {
+        margin-right: calc(-1 * var(--gutter-5));
+        margin-left: calc(-1 * var(--gutter-5));
+    }
 }
 
 .mt-0 {
