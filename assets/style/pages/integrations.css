@@ -8,7 +8,7 @@
     transition: all 0.3s ease 0s;
 }
 .integrations-item-social img {
-    max-width: 125px;
+    width: auto;
     max-height: 28px;
 }
 .integrations-main-block {
@@ -61,7 +61,7 @@
         font-size: 1.06rem;
     }
     .integrations-item-social img {
-        max-width: 97px;
+        width: auto;
         max-height: 28px;
     }
 }
@@ -98,7 +98,7 @@
     transition: all 0.3s ease 0s;
 }
 .submenu-integrations-social img {
-    max-width: 104px;
+    width: auto;
     max-height: 30px;
 }
 
